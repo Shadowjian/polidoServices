@@ -4,7 +4,6 @@ import Services from './components/Services'
 
 import './Home.css'
 
-
 function Footer(){
   return (
     <>
@@ -12,8 +11,6 @@ function Footer(){
     </>
   )
 }
-
-
 
 function Home() {
   return (
