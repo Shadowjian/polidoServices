@@ -14,9 +14,10 @@ function App() {
     <BrowserRouter>
       <Navbar />
     <Routes>
-      <Route  path='/' element={<Home />}/>
-      <Route  path='/about' element={<About />}/>
-      <Route  path='/search' element={<Search />}/>
+      <Route  path='/polidoServices' element={<Home />}/>
+      {/* TODO  how to set path for home page so when loaded on github will appear correctly*/}
+      <Route  path='/polidoServices/about' element={<About />}/>
+      <Route  path='/polidoServices/search' element={<Search />}/>
     </Routes>
     </BrowserRouter>
     </>

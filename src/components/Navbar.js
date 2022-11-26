@@ -11,9 +11,9 @@ const style = {
 function Navbar() {
   return (
     <>
-    <Link to="/" style={style}>Home</Link>
-    <Link to="/about">About</Link>
-    <Link to="/contact">Search</Link>
+    <Link to="/polidoServices" style={style}>Home</Link>
+    <Link to="/polidoServices/about">About</Link>
+    <Link to="/polidoServices/contact">Search</Link>
     </>
   )
 }
