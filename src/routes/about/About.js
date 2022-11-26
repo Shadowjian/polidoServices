@@ -5,7 +5,7 @@ import './About.css'
 
 function About() {
   return (
-    <div>About POLDS sadsds</div>
+    <div>About POLDS BOSTRILLO</div>
   )
 }
 
