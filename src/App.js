@@ -15,7 +15,6 @@ function App() {
       <Navbar />
     <Routes>
       <Route  path='/' element={<Home />}/>
-      {/* TODO  how to set path for home page so when loaded on github will appear correctly*/}
       <Route  path='about' element={<About />}/>
       <Route  path='search' element={<Search />}/>
     </Routes>
