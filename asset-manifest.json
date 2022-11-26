@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/polidoServices/static/css/main.5b3d9f5a.css",
+    "main.js": "/polidoServices/static/js/main.c2776a4b.js",
+    "index.html": "/polidoServices/index.html",
+    "main.5b3d9f5a.css.map": "/polidoServices/static/css/main.5b3d9f5a.css.map",
+    "main.c2776a4b.js.map": "/polidoServices/static/js/main.c2776a4b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b3d9f5a.css",
+    "static/js/main.c2776a4b.js"
+  ]
+}
