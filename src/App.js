@@ -18,7 +18,6 @@ function App() {
       <Route  path='/about' element={<About />}/>
       <Route  path='/search' element={<Search />}/>
     </Routes>
-    <Home />
     </BrowserRouter>
     </>
   );
