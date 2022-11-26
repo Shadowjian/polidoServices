@@ -16,6 +16,7 @@ function Home() {
   return (
     <>
       <Hero />
+      <h1>adding heading just by pushing</h1>
       <Services />
       <Footer />
     </>
