@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/polidoServices/static/css/main.5b3d9f5a.css",
-    "main.js": "/polidoServices/static/js/main.e40fde63.js",
+    "main.js": "/polidoServices/static/js/main.c729f70c.js",
     "index.html": "/polidoServices/index.html",
     "main.5b3d9f5a.css.map": "/polidoServices/static/css/main.5b3d9f5a.css.map",
-    "main.e40fde63.js.map": "/polidoServices/static/js/main.e40fde63.js.map"
+    "main.c729f70c.js.map": "/polidoServices/static/js/main.c729f70c.js.map"
   },
   "entrypoints": [
     "static/css/main.5b3d9f5a.css",
-    "static/js/main.e40fde63.js"
+    "static/js/main.c729f70c.js"
   ]
 }
