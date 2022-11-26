@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import {HashRouter, Routes, Route} from 'react-router-dom'
 
 import Navbar from './components/Navbar';
 import About from './routes/about/About'
@@ -11,15 +11,15 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
     <Routes>
-      <Route  path='/polidoServices' element={<Home />}/>
+      <Route  path='/' element={<Home />}/>
       {/* TODO  how to set path for home page so when loaded on github will appear correctly*/}
-      <Route  path='/polidoServices/about' element={<About />}/>
-      <Route  path='/polidoServices/search' element={<Search />}/>
+      <Route  path='about' element={<About />}/>
+      <Route  path='search' element={<Search />}/>
     </Routes>
-    </BrowserRouter>
+    </HashRouter>
     </>
   );
 }
