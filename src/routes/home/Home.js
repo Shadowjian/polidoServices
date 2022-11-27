@@ -7,7 +7,7 @@ import './Home.css'
 function Footer(){
   return (
     <>
-    <h1>lasjdflkjsdlkfjasljdf </h1>
+    <h1>THIS IS THE HOME</h1>
     </>
   )
 }
@@ -16,7 +16,7 @@ function Home() {
   return (
     <>
       <Hero />
-      <h1>adding heading just by pushing</h1>
+      <h1>THIS IS THE HOME PAGE</h1>
       <Services />
       <Footer />
     </>
