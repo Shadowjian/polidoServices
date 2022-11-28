@@ -4,3 +4,81 @@
 .sample {
     color: aquamarine;
 }
+/* Home Landing Page */
+#landing-container {
+    /* background-image: url(/images/background1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; */
+    width: auto;
+    height: 400vh;
+    margin-bottom: 12px;
+}
+
+.landing1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-logo {
+    min-height: 400px;
+    background-color: #95aad8;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-grow: 2;
+}
+/* .flex-logo img {
+    height: 300px;
+    width: 300px;
+} */
+.flex-slogan {
+    min-height: 400px;
+    background-color: #95d895;
+    flex-grow: 2;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.slogan-title span {
+    font-size: 50px;
+    color: #ff9900;
+}
+.landing2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-newsletter {
+    min-height: 400px;
+    background-color: #95d8c2;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 2;
+}
+.flex-newsletter p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.email-form {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-workers {
+    min-height: 400px;
+    background-color: #c9d895;
+    flex-grow: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+/* .flex-workers img {
+    height: 380px;
+    width: 1000px;
+} */
+
+/* Home Landing Page END*/
