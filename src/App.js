@@ -6,6 +6,8 @@ import About from './routes/about/About'
 import Search from './routes/search/Search'
 import Home from './routes/home/Home';
 
+import "./App.css"
+
 
 function App() {
 
