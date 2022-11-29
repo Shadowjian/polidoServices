@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Search.css'
 
 
+
+
 function Search() {
+
+const [state, setState] = useState('test')
+
+const handleInput =(e)=> {
+  setState(e.target.value)
+}
+
+
+
   return (
     <div className='page-container'>
 
@@ -11,9 +22,14 @@ function Search() {
         <div className="search-container">
           
           {/* SEARCH INPUT */}
-          <input type="text" placeholder='search' className='search-input'/>
-          <div className="search-filter">
-          </div>
+          <input 
+            type="text" 
+            placeholder='search' 
+            className='search-input'
+            onChange={handleInput}
+            />
+          {/* <div className="search-filter"> */}
+          {/* </div> */}
             
             {/* SEARCH FILTER  */}
             <div className='filter'>Budget</div>
@@ -30,9 +46,12 @@ function Search() {
           </div>
         {/* SEARCH RESULT         */}
         <div className="search-result">
+          <br />
+          <p style={{color: 'white'}}>search result: {state}</p>
           {/* SEARCH-CARDS */}
           <div className="search-result-cards">
-            <div className='search-card'></div>
+            <div className='search-card'>
+            </div>
             <div className='search-card'></div>
             <div className='search-card'></div>
             <div className='search-card'></div>
@@ -49,8 +68,8 @@ function Search() {
       <section className='right'>
         <div className="profile">
           <div className='profile-banner'>
-            <h3>"I plug hole for a living"</h3><br /><br />
-            <h2>"Let me take care of your holes"</h2>
+            <h3>"Need a driver?"</h3><br /><br />
+            <h2>""</h2>
           </div>
           <div className='profile-picture'>
              <img src="https://media1.popsugar-assets.com/files/thumbor/8QCfbBsz_Tt7-Zavrc_q6rSrF9Q/356x1145:1857x2646/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/09/04/970/n/1922398/cc3fa7b15d70381d55bd82.88203803_/i/Brad-Pitt.jpg" alt="" />
@@ -63,7 +82,7 @@ function Search() {
               <div className='profile-picture'>
                 <img src="https://i.pinimg.com/736x/19/46/e2/1946e2aba2138ea6a0dc777d0f2eef0e.jpg" alt="" />
               </div>
-                <h5>"When it comes to holes, Brad is the absolute expert!"</h5>
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, deleniti?</h5>
               </div>
               <div className='testi'>
               <div className='profile-picture'>
