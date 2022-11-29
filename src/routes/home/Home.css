@@ -1,9 +1,7 @@
-.hero {
-    color: red;
-}
-.sample {
-    color: aquamarine;
-}
+:root {
+    --bg-color: linear-gradient(-90deg, #281c47, #876cca);
+    --link-color: #ff9900;
+ }
 /* Home Landing Page */
 #landing-container {
     /* background-image: url(/images/background1.png);
@@ -21,7 +19,7 @@
     flex-wrap: wrap;
 }
 .flex-logo {
-    min-height: 400px;
+    min-height: 425px;
     background-color: #95aad8;
     align-items: center;
     display: flex;
@@ -45,12 +43,29 @@
     font-size: 50px;
     color: #ff9900;
 }
+.hire-btn {
+    background: var(--bg-color);
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: 8px 0;
+    padding: 0px;
+    width: 200px;
+    text-align: center;
+}
+.hire-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 50px 0 #876cca,0 20px 100px 0 #876cca;
+    transition: 1s;
+}
 .landing2 {
     display: flex;
     flex-wrap: wrap;
 }
 .flex-newsletter {
-    min-height: 400px;
+    min-height: 440px;
     background-color: #95d8c2;
     align-items: center;
     display: flex;
@@ -58,18 +73,42 @@
     flex-direction: column;
     flex-grow: 2;
 }
-.flex-newsletter p {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
 .email-form {
     display: flex;
     justify-content: center;
+    padding: 5px;
 }
-
+.email-input {
+    height: 50px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 15px 0 0 15px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+.subs-btn {
+    background: var(--bg-color);
+    border: none;
+    border-radius: 0 15px 15px 0;
+    height: 50px;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: 8px 0;
+    padding: 0px;
+    width: 200px;
+    text-align: center;
+}
+.subs-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 50px 0 #876cca,0 20px 100px 0 #876cca;
+    transition: 1s;
+}
 .flex-workers {
-    min-height: 400px;
+    min-height: 440px;
     background-color: #c9d895;
     flex-grow: 2;
     display: flex;
@@ -82,3 +121,116 @@
 } */
 
 /* Home Landing Page END*/
+
+/* Services */
+.svc-container {
+    background: var(--bg-color);
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: .9;
+}
+.svc-header {
+    min-height: 250px;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.svc-title {
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 40px;
+}
+.description {
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 20px;
+}
+.svc-cards {
+    background-color: aqua;
+    width: 95% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-row {
+    background-color: azure;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card {
+    /* background-color: #ff9900; */
+    border: solid 2px black;
+    min-height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    transition: 0.2s;
+    margin: 5px;
+}
+.card-title {
+    font-size: 25px;
+}
+.card:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+.btn {
+    padding: 10px;
+    background: var(--bg-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 50px 0 #876cca;
+    transition: 1s;
+}
+
+/* Services END*/
+
+/* How it works*/
+
+.hiw-title {
+    min-height: 20vh;
+    background-color: #ff9900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    padding-top: 20px;
+}
+.hiw-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+}
+.steps-img {
+    min-height: 400px;
+    background-color: #95aad8;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+.steps {
+    min-height: 400px;
+    background-color: #95d8b1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+.steps-box {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+}
