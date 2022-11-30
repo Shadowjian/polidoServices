@@ -1,16 +1,20 @@
 :root {
     --bg-color: linear-gradient(-90deg, #281c47, #876cca);
+    --bg-color2: white;
+    --bg-color3: rgb(168, 166, 166);
     --link-color: #ff9900;
+    --card-color: #D5D6E3;
  }
-/* Home Landing Page */
+
 #landing-container {
-    /* background-image: url(/images/background1.png);
+    background-image: url(../../assets/imageOne.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center; */
+    background-position: center;
     width: auto;
-    height: 400vh;
+    width: auto;
+    height: 500vh;
     margin-bottom: 12px;
 }
 
@@ -20,24 +24,23 @@
 }
 .flex-logo {
     min-height: 425px;
-    background-color: #95aad8;
     align-items: center;
     display: flex;
     justify-content: center;
     flex-grow: 2;
 }
-/* .flex-logo img {
+.flex-logo img {
     height: 300px;
     width: 300px;
-} */
+}
 .flex-slogan {
     min-height: 400px;
-    background-color: #95d895;
     flex-grow: 2;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 .slogan-title span {
     font-size: 50px;
@@ -57,7 +60,7 @@
 }
 .hire-btn:hover {
     cursor: pointer;
-    box-shadow: 0 2px 50px 0 #876cca,0 20px 100px 0 #876cca;
+    box-shadow: 0 2px 50px 0 #876cca;
     transition: 1s;
 }
 .landing2 {
@@ -66,8 +69,8 @@
 }
 .flex-newsletter {
     min-height: 440px;
-    background-color: #95d8c2;
     align-items: center;
+    text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -85,10 +88,10 @@
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 15px 0 0 15px;
-    cursor: pointer;
     font-size: 20px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
+    cursor: text;
 }
 .subs-btn {
     background: var(--bg-color);
@@ -104,33 +107,33 @@
 }
 .subs-btn:hover {
     cursor: pointer;
-    box-shadow: 0 2px 50px 0 #876cca,0 20px 100px 0 #876cca;
+    box-shadow: 0 2px 50px 0 #876cca;
     transition: 1s;
 }
 .flex-workers {
     min-height: 440px;
-    background-color: #c9d895;
     flex-grow: 2;
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
-/* .flex-workers img {
-    height: 380px;
-    width: 1000px;
-} */
+.flex-workers img {
+    height: auto;
+    width: 100%;
+}
 
 /* Home Landing Page END*/
 
 /* Services */
 .svc-container {
-    background: var(--bg-color);
+    background: var(--bg-color3);
     min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     opacity: .9;
+    padding-top: 20px;
 }
 .svc-header {
     min-height: 250px;
@@ -140,42 +143,51 @@
     flex-direction: column;
 }
 .svc-title {
-    color: whitesmoke;
-    font-weight: 600;
+    color: black;
+    font-weight: 700;
     font-size: 40px;
 }
 .description {
-    color: whitesmoke;
+    color: black;
     font-weight: 400;
     font-size: 20px;
+    padding-bottom: 15px;
 }
 .svc-cards {
-    background-color: aqua;
-    width: 95% ;
+    width: 95%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .card-row {
-    background-color: azure;
     width: 90%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 10px;
 }
-.card {
-    /* background-color: #ff9900; */
-    border: solid 2px black;
-    min-height: 200px;
+.card { 
+    background: var(--card-color);
+    height: auto;
     width: 300px;
     border-radius: 10px;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     transition: 0.2s;
     margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.card img {
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    width: 100%;
+    align-self: center;
+    margin-left: 38px;
 }
 .card-title {
-    font-size: 25px;
+    font-size: 20px;
+    padding-bottom: 5px;
 }
 .card:hover {
     transform: scale(1.1);
@@ -197,40 +209,212 @@
 /* Services END*/
 
 /* How it works*/
-
 .hiw-title {
-    min-height: 20vh;
-    background-color: #ff9900;
+    background: var(--bg-color);
+    color: var(--link-color);
+    opacity: 1;
+    min-height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 80px;
     padding-top: 20px;
 }
-.hiw-container {
-    display: flex;
-    flex-wrap: wrap;
-    height: 80vh;
-}
-.steps-img {
-    min-height: 400px;
-    background-color: #95aad8;
-    align-items: center;
+/* STEP 01 */
+.step-container1 {
+    background: var(--bg-color2);
     display: flex;
     justify-content: center;
-    flex-grow: 1;
+    opacity: .9;
 }
-.steps {
-    min-height: 400px;
-    background-color: #95d8b1;
-    align-items: center;
+.img-box1 {
+    background: url(../../assets/letusknow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 60%;
+}
+.step-row {
+    width: 100%;
+    max-width: 1000px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
 }
-.steps-box {
-    border: 2px solid black;
-    border-radius: 15px;
-    padding: 20px;
+.step-box {
+    background: var(--card-color);
+    color: black;
+    min-height: 300px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 8px;
+    margin-left: -90px;
+    transition: 0.2s;
+}
+.step-box:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+.step-num {
+    font-size: 30px;
+}
+.step-title {
+    font-size: 40px;
+    font-weight: lighter;
+}
+.step-info {
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 25px;
+}
+/* Step 02 */
+.step-container2 {
+    background: var(--bg-color3);
+    display: flex;
+    justify-content: center;
+}
+.img-box2 {
+    background: url(../../assets/legwork.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 70%;
+}
+.step-box2 {
+    background: var(--card-color);
+    color: black;
+    min-height: 300px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 8px;
+    margin: 10px;
+    transition: 0.2s;
+}
+.step-box2:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+/* Step 03 */
+.step-container3 {
+    background: var(--bg-color2);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    opacity: .9;
+}
+.img-box3 {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box3-image {
+    height: 450px;
+    width: 520px;
+}
+.step-box3 {
+    background: var(--card-color);
+    color: black;
+    min-height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+.step-box3:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+/* Step 04 */
+.step-container4 {
+    background: var(--bg-color3);
+    display: flex;
+    justify-content: center;
+}
+.img-box4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 70%;
+}
+.box4-image {
+    height: 550px;
+    width: 390px;
+}
+.step-box4 {
+    background: var(--card-color);
+    color: black;
+    min-height: 300px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 8px;
+    margin: 10px;
+    transition: 0.2s;
+}
+.step-box4:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+/* Search form */
+
+.search-container {
+    background: var(--bg-color2);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.search-h1 {
+    font-size: 60px;
+}
+.search-h2 {
+    font-size: 30px;
+    color: var(--link-color);
+}
+.search-input {
+    height: 50px;
+    width: 500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 15px 0 0 15px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    cursor: text;
+}
+.search-btn {
+    background: var(--bg-color);
+    border: none;
+    border-radius: 0 15px 15px 0;
+    height: 50px;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: 8px 0;
+    width: 200px;
+    text-align: center;
+}
+.search-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 50px 0 #876cca;
+    transition: 1s;
 }
