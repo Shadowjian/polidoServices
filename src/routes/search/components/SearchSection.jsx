@@ -8,7 +8,7 @@ function SearchSection({fn}) {
             <input 
                 type="text" 
                 placeholder='Search for: "plumber, driver, house keeper, etc"'
-                className='search-input'
+                className='search-page-input'
                 onChange={fn}
                 />
             {/* SEARCH FILTER  */}
