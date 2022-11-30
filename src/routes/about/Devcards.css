@@ -1,0 +1,86 @@
+#divCardsContainer{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+
+.devCards{
+    /* background-color: #dcdde4c0 ; */
+    background:linear-gradient(-90deg, #281c47, #876cca);
+    box-shadow: 2px 2px 3px #a7a8b4;
+    border-radius: 5px;
+    /* width: 600px; */
+    margin: 30px;
+    min-width: 500px;
+    max-width: 400px;
+/*    
+    flex: 1; */
+    
+ 
+}
+
+ 
+
+
+#devImageThree{
+    position: absolute;
+    background-image: url(../../assets/webDevTwo.jpg);
+    background-size:cover;
+    height: 100px;
+    width: 100px;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 5px rgb(107, 97, 2);
+    filter: grayscale(90%);
+}
+
+#devInfo{
+
+   
+     color: rgb(61, 61, 99);
+    flex-direction: column;
+    justify-content: right;
+   
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 130px;
+  
+}
+
+#devInfo a{
+    
+    text-decoration: none;
+    color: #ff9900;
+    /* color: rgb(243, 141, 8); */
+     
+     
+}
+
+#devInfo h4, h5{
+    
+    color: rgb(255, 255, 255);
+  }
+   
+
+#devInfo h5{
+    
+    margin-top: 5px;
+    
+}
+
+.iconsContainer{
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+#iconsLink{
+    margin-right: 20px;
+     
+}
+
+ 

@@ -1,7 +1,75 @@
 import React from 'react'
 import './About.css'
+import './Devcards.css'
+import './Cards.js'
+import Cards from './Cards.js'
+ 
  
 
+function CardsDevelopers({name}) {
+  return (
+     <>
+     
+{/* <li className='devCards'>
+
+  <div>
+    <li id='devImageThree'>
+      POLDS IMAGE
+    </li>
+  </div>
+
+  <div id='devInfo'>
+
+    <h2>
+      <a target='_blank' href='https://jvgee520.github.io/portfolio'>{name}</a>
+    </h2>
+    <h4>Founder</h4>
+    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+      turpis est, faucibus vel tincidunt non, elementum nec felis. Pellentesque
+        elementum suscipit lobortis. Proin efficitur varius leo, non interdum mauris 
+        dictum eu. Nullam auctor elit vel dui pulvinar elementum. Suspendisse potenti. 
+    </h5>
+    <div className='iconsContainer'>
+
+      <li id='iconsLink'>
+        <a target='_blank' href="https://discord.com/channels/1046398079940698152/1046398079940698157/1046410471483383878">
+          <i className="fa-brands fa-discord fa-2x"></i>
+        </a>
+      </li>
+      <li id='iconsLink'>
+        <a target='_blank' href="#">
+          <i className="fa-brands fa-twitter fa-2x"></i>
+        </a>
+      </li>
+      <li id='iconsLink'>
+        <a target='_blank' href="#">
+          <i className="fa-brands fa-square-instagram fa-2x"></i>
+        </a>
+      </li>
+      <li id='iconsLink'>
+        <a target='_blank' href="#">
+          <i className="fa-brands fa-github fa-2x"></i>
+        </a>
+      </li>
+
+      <li id='iconsLink'>
+        <a target='_blank' href="#">
+          <i className="fa-solid fa-envelope fa-2x"></i>
+        </a>
+      </li>
+
+
+  </div>
+</div>
+
+
+
+</li> */}
+     </>
+  )
+}
+
+ 
 
 
 function About() {
@@ -42,47 +110,14 @@ function About() {
           </p>
 
         </div>
-
         <div id='divCardsContainer'>
+        {/* <CardsDevelopers name='Hajji'/> */}
+        <Cards/>
 
-          <li id='cardOne'>
-          
-            CARDS PHOTO HAJJI
-          </li>
-          
-          <li id='cardTwo'>
-         
-            <li id='yellowBar'>
-
-           <label id='nameTag'> CARDS PHOTO JOSEPH</label>
-               {/* blue bar */}
-            </li>
-            
-            <li id='devImage'>
-               
-            </li>
-
-            <div id='iconContainer'>
-
-              <li id='progIcons'> 
-              
-               
-
-              </li>
-              
-            </div>
-           
-          </li>
-
-          <li id='cardThree'>CARDS PHOTO POLDZ</li>
-          
-        </div>
-
-       
-
-      
         
       </div>
+      </div>
+
     </>
   )
 }
