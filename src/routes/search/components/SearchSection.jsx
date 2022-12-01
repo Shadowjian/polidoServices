@@ -1,15 +1,15 @@
 import React from 'react'
 
-function SearchSection({fn}) {
+function SearchSection({searchFn, searchInput}) {
         
     return (
-        <div className="search-container">
+        <div className="search-page-container">
             {/* SEARCH INPUT */}
             <input 
-                type="text" 
+                value={searchInput}
+                onChange={searchFn}
                 placeholder='Search for: "plumber, driver, house keeper, etc"'
                 className='search-page-input'
-                onChange={fn}
                 />
             {/* SEARCH FILTER  */}
             {/* <div className='filter'>Budget</div> */}
