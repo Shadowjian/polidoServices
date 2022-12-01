@@ -1,8 +1,22 @@
+//TODO create a new object for the seller's profile:
+
+// 1. banner
+// 2. phrase inside banner 
+// 3. profile pic
+// 4. reviews/testimonials
+// 5. ratings
+
+//TODO
+// 6. create a function to make it a modal -- DONE!
+// 7. finalize the css
+
+
 import React from 'react'
 
-function RightSection() {
+function RightSection({hideSeller}) {
   return (
     <section className='right'>
+      <button onClick={hideSeller}>x</button>
     <div className="profile">
       <div className='profile-banner'>
         <h3>"Need a driver?"</h3><br /><br />

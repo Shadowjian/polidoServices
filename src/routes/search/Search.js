@@ -10,6 +10,7 @@ import Sellers from './components/Sellers'
 function Search() {
   const [sellers, setSellers] = useState([])
   const [searchInput, setSearchInput] = useState('')
+  const [sellerProfile, setSellerProfile] = useState(false)
 
   useEffect(()=>{
     setSellers(Sellers)
@@ -23,14 +24,27 @@ function Search() {
         return seller.skills.includes(searchInput.toLowerCase())
       }))
   }
+
+  const showSeller = () => {
+    setSellerProfile(true)
+  }
+  const hideSeller = () => {
+    setSellerProfile(false)
+  }
+
   console.log(sellers)
   return (
     <div className='page-container'>
       <div className='left'>
         <SearchSection searchFn={searchSellers} searchInput={searchInput}/>
-        <LeftSection result={searchInput} sellers={sellers}/>
+        <LeftSection sellers={sellers} showSeller = {showSeller} searchInput={searchInput}/>
       </div>
-      <RightSection />
+      {sellerProfile &&
+          <>
+            <div className='overlay' onClick={hideSeller}></div> 
+            <RightSection hideSeller = {hideSeller}/>
+          </> 
+      }
     </div>
   )
 }

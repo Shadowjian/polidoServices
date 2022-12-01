@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import Logo from '../../../assets/logo.png'
 import Polidos from '../../../assets/polidos.png'
 import Laundry from '../../../assets/laundry.jpg'
@@ -21,9 +23,9 @@ function Hero() {
               <div className="flex-slogan">
                   <h1 className="slogan-title">Your <span>PROBLEM</span>... We <span>SOLVE</span></h1>
                   <h3>Broken pipes? Roof leaking? Need Driver?</h3>
-                  <a href='#'>
-                  <button className="hire-btn">Hire a Proffesional</button>
-                  </a>
+                  <button className="hire-btn">
+                    <Link to="search" style={{color: 'white'}}>Hire a Proffesional</Link>
+                  </button>
               </div>
           </div>
 

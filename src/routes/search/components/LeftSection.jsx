@@ -2,9 +2,9 @@ import React from 'react'
 
 const php = "\u20B1"
 
-function SearchCard ({fn, seller}) {
+function SearchCard ({showSeller, seller}) {
     return (
-      <div className='search-card' onClick={fn}>
+      <div className='search-card' onClick={showSeller}>
           <div className='card-banner'>
             <img src={seller.banner} alt="" />
           </div>
@@ -32,19 +32,22 @@ function SearchCard ({fn, seller}) {
     )
   }
 
-const handleClick=()=>{
-  alert('result card')
-}
-  
-function LeftSection({result, sellers}) {
+function LeftSection({sellers, showSeller, searchInput }) {
 
     return (
         <div className="search-result">
-            <p style={{color: 'white'}}>search result: {result}</p>
+          {searchInput &&
+            <>
+              {sellers.length > 0 ? 
+              <p style={{marginBottom:"20px"}}>Results for {searchInput.toUpperCase()}: There are {sellers.length} available services.</p> : <p style={{marginBottom: '20px'}}>We don't have that service yet.</p>
+              }
+            </>
+          }
+            
 
             {/* SEARCH-CARDS */}
             <div className="search-result-cards">
-                {sellers.map((seller, id)=> (<SearchCard key={id} seller={seller} fn={handleClick}/>))}
+                {sellers.map((seller, id)=> (<SearchCard key={id} seller={seller} showSeller={showSeller}/>))}
             </div>
         </div>
     )
