@@ -37,7 +37,7 @@ body {
 
 /* SEARCH COMPONENT */
 
-.search-container {
+.search-page-container {
     display: flex;
     /* align-self: flex-start ; */
     width: 100%;
