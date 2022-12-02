@@ -37,10 +37,10 @@ useEffect(()=>{
   
   return (
       <>
-        <h1>
+        {/* <h1>
            {tags.map((tag)=> tag.name)}
         </h1>
-     
+      */}
       </>
    
   )

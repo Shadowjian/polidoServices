@@ -1,78 +1,49 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './About.css'
 import './Devcards.css'
-import './Cards.js'
+ 
 import Cards from './Cards.js'
- 
+import CardsDevelopers from './CardsDevelopers.js'
+import webDevThree from '../../assets/webDevThree.jpg'
+import webDevOne from '../../assets/webDevOne.jpg'
+import webDevTwo from '../../assets/webDevTwo.jpg'
  
 
-function CardsDevelopers({name}) {
-  return (
-     <>
+ 
+const foundersObject = [
+  {
      
-{/* <li className='devCards'>
+    image:webDevOne,
+    name: 'Hajji',
+    position: 'Founder|Fullstack Web Developer',
+    statement: 'Motivated junior web developer looking for a role as full-stack web developer at SoftwareX. Passionate about building first-class web applications. Developed an e-commerce website for a local fashion retailer while at University X. Relevant skills include DNS Management, Database, Debugging, and more.',
+    link:['https://discord.com/channels/1046398079940698152/1046398079940698157/1046410471483383878','https://twitter.com/GeeCrypto826?fbclid=IwAR3Jqq8mLA-To9TbYFh_at9u9la8TlT720iBJqsAZDI93jHXD1DjgttTb_s','https://www.instagram.com/dailygearmmxix','https://www.instagram.com/dailygearmmxix','https://mail.google.com']
+  },
 
-  <div>
-    <li id='devImageThree'>
-      POLDS IMAGE
-    </li>
-  </div>
+  {
+    image: webDevTwo,
+    name: 'Joseph',
+    position: 'Co-Founder|Fullstack Web Developer',
+    statement: 'Experienced web developer with a strong background in developing award-winning applications for a diverse clientele. 5+ years of industry experience includes programming, debugging, and wireframes. Received 80%+ experience scores on every web application built for SoftwareX.',
+    link:['https://discord.com/channels/1046398079940698152/1046398079940698157/1046410471483383878','https://twitter.com/GeeCrypto826?fbclid=IwAR3Jqq8mLA-To9TbYFh_at9u9la8TlT720iBJqsAZDI93jHXD1DjgttTb_s','https://www.instagram.com/dailygearmmxix','https://www.instagram.com/dailygearmmxix','https://mail.google.com']
+  },
+  {
+    image: webDevThree,
+    name: 'Poldz',
+    position: 'Co-Founder|Fullstack Web Developer',
+    statement: 'Dedicated and efficient full stack developer with 6+ years experience in application layers, presentation layers, and databases. Certified in both F/E and B/E technologies. Spearheaded successful transition from LAMP stack to MEAN which cut latency by 40% and increased effectiveness of database  administrators by 20%.',
+    link:['https://discord.com/','https://twitter.com/','https://www.instagram.com/','https://github.com/','https://mail.google.com']
+  }
+]
 
-  <div id='devInfo'>
-
-    <h2>
-      <a target='_blank' href='https://jvgee520.github.io/portfolio'>{name}</a>
-    </h2>
-    <h4>Founder</h4>
-    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-      turpis est, faucibus vel tincidunt non, elementum nec felis. Pellentesque
-        elementum suscipit lobortis. Proin efficitur varius leo, non interdum mauris 
-        dictum eu. Nullam auctor elit vel dui pulvinar elementum. Suspendisse potenti. 
-    </h5>
-    <div className='iconsContainer'>
-
-      <li id='iconsLink'>
-        <a target='_blank' href="https://discord.com/channels/1046398079940698152/1046398079940698157/1046410471483383878">
-          <i className="fa-brands fa-discord fa-2x"></i>
-        </a>
-      </li>
-      <li id='iconsLink'>
-        <a target='_blank' href="#">
-          <i className="fa-brands fa-twitter fa-2x"></i>
-        </a>
-      </li>
-      <li id='iconsLink'>
-        <a target='_blank' href="#">
-          <i className="fa-brands fa-square-instagram fa-2x"></i>
-        </a>
-      </li>
-      <li id='iconsLink'>
-        <a target='_blank' href="#">
-          <i className="fa-brands fa-github fa-2x"></i>
-        </a>
-      </li>
-
-      <li id='iconsLink'>
-        <a target='_blank' href="#">
-          <i className="fa-solid fa-envelope fa-2x"></i>
-        </a>
-      </li>
-
-
-  </div>
-</div>
-
-
-
-</li> */}
-     </>
-  )
-}
-
- 
 
 
 function About() {
+
+  const [founders, setFounders] = useState([])
+  useEffect(()=>{
+    setFounders(foundersObject)
+  },[])
   return (
     <> 
       <div id='aboutBody'>
@@ -111,12 +82,20 @@ function About() {
 
         </div>
         <div id='divCardsContainer'>
-        {/* <CardsDevelopers name='Hajji'/> */}
-        <Cards/>
-
+         {founders.map((founder)=>(<CardsDevelopers listFounder={founder}/>))}
+         
+         {/* {founders.map((founder)=>(<CardDevTwo listFounder={founder}/>))} */}
+         {/* {founderTwo.map((founderOther)=>(<TempCards listFounderTwo={founderOther}/>))} */}
+          
+        
+        
+        {/* <Cards/> */}
+       
+      
+      </div>
         
       </div>
-      </div>
+   
 
     </>
   )

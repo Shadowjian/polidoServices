@@ -3,13 +3,13 @@
     padding: 0;
 }
 
-#aboutBody{
+/* #aboutBody{
     background-image: url(../../assets/imageOne.png);
     background-size: cover;
     height: 100vh;
     width: 100%;
     
-}
+} */
 
 #aboutBody{
     text-align: center;

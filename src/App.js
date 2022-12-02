@@ -5,12 +5,14 @@ import Navbar from './components/Navbar';
 import About from './routes/about/About'
 import Search from './routes/search/Search'
 import Home from './routes/home/Home';
+ 
 
 
 function App() {
 
   return (
     <>
+    
     <HashRouter>
       <Navbar />
     <Routes>
