@@ -1,10 +1,4 @@
-:root {
-    --bg-color: linear-gradient(-90deg, #281c47, #876cca);
-    --bg-color2: white;
-    --bg-color3: rgb(168, 166, 166);
-    --link-color: #ff9900;
-    --card-color: #D5D6E3;
- }
+
 
 #landing-container {
     background-image: url(../../assets/imageOne.png);
@@ -124,7 +118,7 @@
 
 /* Home Landing Page END*/
 
-/* Services */
+/* Services =====================================*/
 .svc-container {
     background: var(--bg-color3);
     min-height: 80vh;
@@ -178,7 +172,7 @@
     display: flex;
     flex-direction: column;
 }
-.card img {
+.svc-images {
     border-radius: 10px 10px 0 0;
     height: 200px;
     width: 100%;
@@ -208,7 +202,7 @@
 
 /* Services END*/
 
-/* How it works*/
+/* How it works =====================================*/
 .hiw-title {
     background: var(--bg-color);
     color: var(--link-color);
@@ -371,7 +365,7 @@
     z-index: 1;
 }
 
-/* Search form */
+/* Search form =====================================*/
 
 .search-container {
     background: var(--bg-color2);
@@ -417,4 +411,129 @@
     cursor: pointer;
     box-shadow: 0 2px 50px 0 #876cca;
     transition: 1s;
+}
+
+/* =========Media Query========= */
+
+@media only screen and (max-width: 1000px) {
+
+    /* Services */
+    .svc-header {
+        min-height: 200px;
+        width: 70%;
+        padding-top: 20px;
+    }
+    .svc-title {
+        font-weight: 700;
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .description {
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    /* How it works */
+.hiw-title {
+    min-height: 300px;
+    font-size: 70px;
+    }
+
+    /* STEP 01 */
+    .step-container1 {  
+    }
+    .img-box1 {
+        height: 400px;
+        width: 50%;
+    }
+    .step-row {
+        width: 100%;
+        max-width: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .step-box {
+        min-height: 250px;
+        width: 40%;
+        padding: 20px;
+    }
+    .step-num {
+        font-size: 20px;
+    }
+    .step-title {
+        font-size: 30px;
+    }
+    .step-info {
+        margin: 10px 0;
+    }
+
+    /* Step 02 */
+    .step-container2 {
+    }
+    .img-box2 {
+        height: 400px;
+        width: 70%;
+        margin-bottom: 50px;
+    }
+    .step-box2 {
+        min-height: 250px;
+        padding: 20px;
+    }
+
+    /* Step 03 */
+    .step-container3 {
+        height: 500px;
+    }
+    .img-box3 {
+        height: 250px;
+        width: 50%;
+    }
+    .box3-image {
+        height: 400px;
+        width: 500px;
+    }
+    .step-box3 {
+        min-height: 250px;
+        width: 40%;
+        padding: 20px;
+    }
+
+    /* Step 04 */
+    .step-container4 {
+        height: 500px;
+    }
+    .img-box4 {
+        height: 500px;
+    }
+    .box4-image {
+        height: 500px;
+        width: 350px;
+    }
+    .step-box4 {
+        min-height: 250px;
+        width: 40%;
+        padding: 20px;
+    }
+
+    /* Search form =====================================*/
+    .search-container {
+        height: 400px;
+    }
+    .search-h1 {
+        font-size: 40px;
+    }
+    .search-h2 {
+        font-size: 20px;
+    }
+    .search-input {
+        height: 40px;
+        width: 400px;
+        font-size: 15px;
+    }
+    .search-btn {
+        height: 40px;
+        font-size: 15px;
+        width: 100px;
+    }
 }

@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,500;8..144,700&display=swap');
 
+:root {
+    --bg-color: linear-gradient(-90deg, #281c47, #876cca);
+    --bg-color2: white;
+    --bg-color3: rgb(168, 166, 166);
+    --link-color: #ff9900;
+    --card-color: #D5D6E3;
+ }
+ 
 * {
     margin: 0;
     padding: 0;
