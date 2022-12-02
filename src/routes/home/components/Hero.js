@@ -46,7 +46,7 @@ function Hero() {
               </div>
           </div>
 
-          {/* // Services  */}
+{/* // Services  */}
 
           <div className="svc-container">
 
@@ -59,7 +59,7 @@ function Hero() {
                   <div className="card-row">
 
                       <div className="card">
-                        <img src={Laundry} alt="" />
+                        <img className='svc-images' src={Laundry} alt="" />
                           <div className="card-body">
                             <h5 className="card-title">Laundry Services</h5>
                             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -70,7 +70,7 @@ function Hero() {
                       </div>
 
                       <div className="card">
-                        <img src={Home} alt="" />
+                        <img className='svc-images' src={Home} alt="" />
                           <div className="card-body">
                             <h5 className="card-title">Home Maintainance</h5>
                             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -81,7 +81,7 @@ function Hero() {
                       </div>
 
                       <div className="card">
-                        <img src={Repair} alt="" />
+                        <img className='svc-images' src={Repair} alt="" />
                           <div className="card-body">
                             <h5 className="card-title">Repair Services</h5>
                             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -92,7 +92,7 @@ function Hero() {
                       </div>
 
                       <div className="card">
-                        <img src={Transport} alt="" />
+                        <img className='svc-images' src={Transport} alt="" />
                           <div className="card-body">
                             <h5 className="card-title">Transport Services</h5>
                             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -107,9 +107,9 @@ function Hero() {
 
           </div>
 
-          {/* Services End */}
+{/* Services End */}
 
-          {/* HOW IT WORKS [hiw]*/}
+{/* HOW IT WORKS [hiw]*/}
 
           <div className="hiw">
             <h1 className="hiw-title">How It Works</h1>
@@ -163,8 +163,8 @@ function Hero() {
               </div>
           </div>
 
-        {/* HOW IT WORKS [hiw] END*/}
-        {/* Search Form */}
+{/* HOW IT WORKS [hiw] END*/}
+{/* Search Form */}
 
           <div className='search-container'>
               <h1 className='search-h1' >Ready to Find a Proffesional?</h1>
