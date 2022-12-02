@@ -5,15 +5,15 @@ import Navbar from './components/Navbar';
 import About from './routes/about/About'
 import Search from './routes/search/Search'
 import Home from './routes/home/Home';
-import Footer from './components/Footer';
-
 import "./App.css"
+import Footer from './components/Footer';
 
 
 function App() {
 
   return (
     <>
+    
     <HashRouter>
       <Navbar />
       <Routes>
