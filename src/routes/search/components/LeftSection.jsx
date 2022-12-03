@@ -43,8 +43,6 @@ function LeftSection({sellers, showSeller, searchInput }) {
               }
             </>
           }
-            
-
             {/* SEARCH-CARDS */}
             <div className="search-result-cards">
                 {sellers.map((seller, id)=> (<SearchCard key={id} seller={seller} showSeller={showSeller}/>))}
