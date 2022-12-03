@@ -17,6 +17,8 @@ function NavModal({hideNav}) {
   )
 }
 
+
+
 function Login({hideLogin}) {
   return (
       <form action="" id='login-modal'>
@@ -42,6 +44,7 @@ function Login({hideLogin}) {
 function Navbar() {
 const [navigation, setNavigation] = useState(false)
 const [login, setLogin] = useState(false)
+const [loggedIn, setLoggedIn] = useState(false)
 
 
 
@@ -60,7 +63,6 @@ const hideNav = () => {
  }
 
 
-
   return (
     <section id='navbar-wrapper'>
       <div id='navbar'>
@@ -74,12 +76,18 @@ const hideNav = () => {
           <Link className="link" to="about">About</Link>
           {/* <Link className="link" to="search">Search</Link> */}
           <a href="#footer"className="link">Contacts</a>
-          <div className="link" onClick={showLogin}>Log In</div>
-          <div className="link">Sign Up</div>
+          
+          {loggedIn? <div className="link">Profile</div> :
+          <div className="link" onClick={showLogin}>Login</div>}
+          
         </div>
-        <div id='login-btn' onClick={showLogin}>
+
+        {loggedIn? <div className='login-btn'>Profile</div> : 
+        <div className='login-btn' onClick={showLogin}>
           Login
         </div>
+        }
+
       </div>
 
       <div>
