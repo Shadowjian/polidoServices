@@ -11,20 +11,23 @@
 // 7. finalize the css
 
 
+
+
 import React from 'react'
 
-function RightSection({hideSeller}) {
+function RightSection({hideSeller, sellerData}) {
+  console.log(sellerData)
   return (
     <section className='right'>
-      <button onClick={hideSeller}>x</button>
+      <div onClick={hideSeller}>Return</div>
     <div className="profile">
       <div className='profile-banner'>
-        <h3>"Need a driver?"</h3><br /><br />
-        <h2>""</h2>
+        <h3>"{sellerData.phrase}"</h3>
       </div>
       <div className='profile-picture'>
-         <img src="https://media1.popsugar-assets.com/files/thumbor/8QCfbBsz_Tt7-Zavrc_q6rSrF9Q/356x1145:1857x2646/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/09/04/970/n/1922398/cc3fa7b15d70381d55bd82.88203803_/i/Brad-Pitt.jpg" alt="" />
+         <img src={sellerData.photo} alt="" />
       </div>
+      <h2>{sellerData.name}</h2>
       <div>
         <h2 className='testi-heading'>Testimonials</h2>
       </div>

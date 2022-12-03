@@ -84,7 +84,7 @@ body {
     display: none;
 }
 
-#login-btn {
+.login-btn {
     display: none;
 }
 .nav-btn:hover, #login-btn:hover {
@@ -118,7 +118,7 @@ body {
     #navbar .links {
         display: none;
     }
-    #login-btn, .nav-btn {
+    .login-btn, .nav-btn {
         display: block;
         color: rgb(231, 226, 237);
     }
@@ -160,6 +160,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: rgb(248, 242, 251);
+    z-index: 100;
 }
 
 .join-modal {
