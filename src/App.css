@@ -2,6 +2,8 @@
 
 :root {
     --bg-color: linear-gradient(-90deg, #281c47, #876cca);
+    --bg-color4: linear-gradient(272.51deg, #2E2D51 63.71%, rgba(86, 84, 171, 0.51693) 85.16%, rgba(141, 141, 141, 0) 115.31%);
+
     --bg-color2: white;
     --bg-color3: rgb(168, 166, 166);
     /* --link-color: #ff9900; */
@@ -54,8 +56,8 @@ body {
 #navbar .links {
     display: flex;
     /* border: solid green; */
-    padding: 5px;
-    gap: 10px;
+    align-items: center;
+    gap: 20px;
 
 }
 
@@ -85,8 +87,7 @@ body {
     height: 10vh;
     /* background-color: rgba(53, 29, 66, 0.8); */
     background: linear-gradient(272.51deg, #2E2D51 63.71%, rgba(86, 84, 171, 0.51693) 85.16%, rgba(141, 141, 141, 0) 115.31%)
-
-    
+ 
 }
 
 .nav-btn {
@@ -95,7 +96,49 @@ body {
 
 .login-btn {
     display: none;
+    
 }
+.profile-btn {
+    border-radius: 50%;
+    width: 2.5rem;
+    box-shadow: 1px 1px 1px var(--color-text1);
+}
+.profile-btn:hover {
+    box-shadow: 1px 1px 1px var(--link-color);
+}
+
+.profile-btn img {
+    width: 100%;
+}
+
+.profile-drop-down {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    top: 55px;
+    right: 5vw;
+    width: 100px;
+    background: #2E2D51;
+    /* background: var(--profile-color1); */
+    color: var(--color-text5);
+    border-radius: 5px;
+    box-shadow: -2px 2px 2px var(--color-text5);
+}
+
+.profile-drop-down div:hover {
+    /* background-color: var(--bg-hover); */
+    color: var(--link-color);
+    cursor: pointer;
+}
+.profile-drop-down div {
+    width: 100%;
+    padding: 10px;
+}
+
+
 .nav-btn:hover, .login-btn:hover {
     cursor: pointer;
     color: var(--link-color)
@@ -207,6 +250,17 @@ body {
     font-size: large;
     width: 100%;
     padding: 10px;
+}
+
+.forgot-password {
+    color: var(--color-text2);
+    font-size: small;
+    align-self: end;
+}
+
+.forgot-password:hover {
+    cursor: pointer;
+    color: var(--link-color)
 }
 
 .ismember {

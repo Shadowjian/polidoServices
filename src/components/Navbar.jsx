@@ -4,6 +4,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
+import profilePic from '../assets/svg/profilePic.svg'
 
 
 function NavModal({hideNav}) {
@@ -17,9 +18,9 @@ function NavModal({hideNav}) {
   )
 }
 
-function Login({hideLogin, showSignUp}) {
+function Login({hideLogin, showSignUp, logIn}) {
   return (
-      <form action="" id='login-modal'>
+      <form id='login-modal'>
         <i className="fa-solid fa-x close-btn" onClick={hideLogin}></i>
         <div className="join-modal">
           <h3 className="join-heading">Polido Services</h3>
@@ -27,15 +28,17 @@ function Login({hideLogin, showSignUp}) {
           <div  className="btnl btn-google">Continue with Google</div>
           <div className="or"> OR </div>
           <div className="input">
-              <input type="email" name="email" id="email" placeholder="Please enter your email" />
+            Email
+              <input required type="email" name="email" id="email" placeholder="Please enter your email" />
           </div>
           <div className="input">
-              <input type="password" name="email" id="password" placeholder="Please enter your password" />
+            Passwod
+              <input required type="password" name="email" id="password" placeholder="Please enter your password" />
           </div>
-          <div>
-            Forgot Password?
+          <div className='forgot-password'>
+            Forgot Password
           </div>
-          <div  className="btnl login-continue">Continue</div>
+          <div typeof='button' className="btnl login-continue" onClick={logIn}>Continue</div>
           <div className="login-member">
             New to Pollido Services? <span className="ismember" onClick={showSignUp}>Sign Up</span>
           </div>
@@ -44,8 +47,7 @@ function Login({hideLogin, showSignUp}) {
   )
 }
 
-
-function SignUp({hideSignUp}) {
+function SignUp({hideSignUp, logIn}) {
   return (
       <form action="" id='login-modal'>
         <i className="fa-solid fa-x close-btn" onClick={hideSignUp}></i>
@@ -55,13 +57,15 @@ function SignUp({hideSignUp}) {
           <div  className="btnl btn-google">Sign Up with Google</div>
           <div className="or"> OR </div>
           <div className="input">
+            Email
               <input type="email" name="email" id="email" placeholder="Please enter your email" />
           </div>
           <div className="input">
+            Password
               <input type="password" name="email" id="password" placeholder="Minimum 6 characters with a number and a letter" />
           </div>
           
-          <div  className="btnl login-continue">Continue</div>
+          <div  className="btnl login-continue" onClick={logIn}>Continue</div>
           <div className="login-member">
             Already a member? <span className="ismember" onClick={hideSignUp}>Sign in</span>
           </div>
@@ -71,13 +75,26 @@ function SignUp({hideSignUp}) {
 }
 
 
+function ProfileDropDown({logOut}) {
+  return (
+    <div className='profile-drop-down'>
+        <div>Settings</div>
+        <div onClick = {logOut}>Logout</div>
+    </div>
+  )
+}
+
 function Navbar() {
 const [navigation, setNavigation] = useState(false)
 const [login, setLogin] = useState(false)
 const [loggedIn, setLoggedIn] = useState(false)
 const [signUp, setSignUp] = useState(false)
+const [profileToggle, setProfileToggle] = useState(false)
 
-
+const logOut=()=>{
+  setLoggedIn(false)
+  setProfileToggle(false)
+}
 
 const showNav = () => {
   setNavigation(true)
@@ -103,6 +120,17 @@ const showSignUp = () => {
   setLogin(false)
 }
 
+const logIn = () =>{
+  setLoggedIn(true)
+  setSignUp(false)
+  setLogin(false)
+}
+
+const toggleProfile = ()=> {
+  !profileToggle ? setProfileToggle(true) : setProfileToggle(false)
+  console.log(profileToggle)
+}
+
   return (
     <section id='navbar-wrapper'>
       <div id='navbar'>
@@ -116,12 +144,16 @@ const showSignUp = () => {
           <Link className="link" to="about">About</Link>
           <Link className="link" to="search">Search</Link>
           
-          {loggedIn? <div className="link">Profile</div> :
+          {loggedIn? <div className="link profile-btn" onClick={toggleProfile}>
+            <img src={profilePic} alt="" />
+          </div> :
           <div className="link" onClick={showLogin}>Login</div>}
           
         </div>
 
-        {loggedIn? <div className='login-btn'>Profile</div> : 
+        {loggedIn? <div className='login-btn profile-btn' onClick={toggleProfile}>
+          <img src={profilePic} alt="" />
+        </div> : 
         <div className='login-btn' onClick={showLogin}>
           Login
         </div>
@@ -140,15 +172,18 @@ const showSignUp = () => {
           {login && 
           <>
           <div className='overlay' onClick={hideLogin}></div>
-          <Login hideLogin={hideLogin} showSignUp={showSignUp}/>
+          <Login hideLogin={hideLogin} showSignUp={showSignUp} logIn={logIn}/>
           </>}
         </div>
       <div>
           {signUp && 
           <>
           <div className='overlay' onClick={hideSignUp}></div>
-          <SignUp hideSignUp={hideSignUp}/>
+          <SignUp hideSignUp={hideSignUp} logIn={logIn}/>
           </>}
+        </div>
+      <div>
+          {profileToggle && <ProfileDropDown logOut={logOut}/>}
         </div>
 
     </section>
