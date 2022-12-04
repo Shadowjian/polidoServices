@@ -1,5 +1,15 @@
 
 export const sellerNameList = ['Stark','Banner', 'Rogers', 'Barton', 'Parker', 'Happy', 'Quil', 'Noob69', "T'Challa", "Strange", "Lang", "Vision", "Sins"]
+export const sellerSkillList = [
+    "carpentry, carpenter, cabinet",
+    "driver, driving, sweetlover, car wash",
+    "gardening, gardenir",
+    "pet, petmalu, petmaster, nannypet",
+    "massage, massager, chiropractor",
+    "plumber, plumbing, pipe leak",
+    "housekeeper, house cleaner, cleaning house",
+    "tutor, nanny",
+]
 export const sellerPhraseList = [
     'Patience is something you admire in the driver behind you and scorn in the one ahead.',
     'Leave sooner, drive slower, live longer.', 
@@ -10,6 +20,7 @@ export const sellerPhraseList = [
     'Why do they call it rush hour when nothing moves?',
     'There are two things no man will admit he cannot do well, drive and make love.',
     'I couldn’t repair your brakes, so I made your horn louder.',
+    'Genius, billionaire, playboy, philanthropist.',
 ]
 
 export const sellerPhotoList = [
@@ -33,18 +44,33 @@ export const sellerPhotoList = [
 ]
 
 export const cxPhotoList = [
-    'Stark',
-    'Banner', 
-    'Rogers', 
-    'Barton', 
-    'Parker', 
-    'Happy']
+    'https://www.thenews.com.pk/assets/uploads/updates/2021-05-11/833678_4484867_scarlet-johansoon_updates.jpg',
+    'https://static.tvtropes.org/pmwiki/pub/images/agent_carter_peggy_season_2.jpg', 
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN4ytnLj19x5SjlCc_L-BU2qFyhej_b7vbRw&usqp=CAU', 
+    'https://i.ytimg.com/vi/RZD___aZ1-Q/maxresdefault.jpg', 
+    'https://i.pinimg.com/736x/c2/40/b8/c240b86d41a654531a4ce2df3e4b2610.jpg', 
+    'https://en.mcuwiki.ddns.net/images/9/94/Hela_in_Thor_-_Ragnarok.jpg', 
+    'https://media.glamourmagazine.co.uk/photos/613895c9fe678a516c682fb3/16:9/w_2560%2Cc_limit/gettyimages-1144489889_sf.jpg', 
+    'https://i.guim.co.uk/img/media/4f28367b6c5b5066d2363b6830aeb01c0c52436e/933_55_1880_1128/500.jpg?quality=85&auto=format&fit=max&s=d8db7211f746fb11c77204d081d704f7', 
+    'https://cdn.vox-cdn.com/thumbor/dnKcmepFru7Ef-HlfNCbXsnfJrU=/0x0:1400x700/1400x1400/filters:focal(588x238:812x462):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/54485237/bb_groot.0.jpg', 
+]
 
 export const cxReviewList = [
-    'Stark',
-    'Banner', 
-    'Rogers', 
-    'Barton', 
-    'Parker', 
-    'Happy']
+    'Cause if we can’t protect the Earth, you can be damn sure we’ll avenge it.',
+    'I can do this all day.', 
+    'You get hurt, hurt ’em back. You get killed …  walk it off.', 
+    'I told you. I don’t want to join your super-secret boy band.', 
+    'Well, performance issues, it’s not uncommon. One out of five…', 
+    'I’m a huge fan of the way you lose control and turn into an enormous green rage monster.', 
+    'Doth mother know you weareth her drapes.', 
+    'Sometimes you gotta run before you can walk.', 
+    'Have you ever tried shawarma… I don’t know what it is, but I wanna try it.', 
+    'If there’s one thing I’ve proven it’s that you can count on me to pleasure myself.', 
+    'Genius, billionaire, playboy, philanthropist.', 
+    'Your ancestors called it magic, and you call it science. Well, I come from a place where they’re one and the same thing.', 
+    'I went for the head…', 
+    'I choose to run towards my problems, and not away from them. Because that’s– because that’s what heroes do.', 
+    "I'm still worthy.", 
+]
+
 

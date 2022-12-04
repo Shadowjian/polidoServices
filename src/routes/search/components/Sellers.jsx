@@ -1,5 +1,5 @@
 // import logo from '../../../assets/logo.png'
-import {sellerNameList, sellerPhraseList, sellerPhotoList} from './Data'
+import {sellerNameList, sellerPhraseList, sellerPhotoList, cxPhotoList, cxReviewList, sellerSkillList} from './Data'
 
 
 
@@ -12,21 +12,323 @@ const sellersObject = [
       reviews: Math.ceil(Math.random()*100),
       cxReviews: [
         {
-          cxPhoto: "data:image/jpeg;base64,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",
-          review: "I love you 3000",
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
         },
         {
-          cxPhoto: "data:image/jpeg;base64,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",
-          review: "I love you 3000",
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
         },
         {
-          cxPhoto: "data:image/jpeg;base64,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",
-          review: "I love you 3000",
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
         },
+        
     ],
       ratePerHour: Math.ceil(Math.random()*100 + 200),
       
-      skills: "carpentry, carpenter, cabinet, furniture",
+      skills: sellerSkillList[Math.floor(Math.random()*sellerSkillList.length)],
+
+
+      photo: sellerPhotoList[Math.floor(Math.random()*sellerPhotoList.length)],
+
+      banner: "https://media.istockphoto.com/id/1396466280/photo/home-improvement-construction-tools-on-black-background-with-copy-space-banner.jpg?s=612x612&w=0&k=20&c=MPUykaTV-NfspUQHee8fhmOouZrn89wS_2yv_Ih71GU="
+    },
+    {
+      name: sellerNameList[Math.floor(Math.random()*sellerNameList.length)],
+      level: Math.ceil(Math.random()*5),
+      phrase: sellerPhraseList[Math.floor(Math.random()*sellerPhraseList.length)],
+      rating: Math.ceil(Math.random()*5),
+      reviews: Math.ceil(Math.random()*100),
+      cxReviews: [
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        
+    ],
+      ratePerHour: Math.ceil(Math.random()*100 + 200),
+      
+      skills: sellerSkillList[Math.floor(Math.random()*sellerSkillList.length)],
+
+
+      photo: sellerPhotoList[Math.floor(Math.random()*sellerPhotoList.length)],
+
+      banner: "https://media.istockphoto.com/id/1396466280/photo/home-improvement-construction-tools-on-black-background-with-copy-space-banner.jpg?s=612x612&w=0&k=20&c=MPUykaTV-NfspUQHee8fhmOouZrn89wS_2yv_Ih71GU="
+    },
+    {
+      name: sellerNameList[Math.floor(Math.random()*sellerNameList.length)],
+      level: Math.ceil(Math.random()*5),
+      phrase: sellerPhraseList[Math.floor(Math.random()*sellerPhraseList.length)],
+      rating: Math.ceil(Math.random()*5),
+      reviews: Math.ceil(Math.random()*100),
+      cxReviews: [
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        
+    ],
+      ratePerHour: Math.ceil(Math.random()*100 + 200),
+      
+      skills: sellerSkillList[Math.floor(Math.random()*sellerSkillList.length)],
+
+
+      photo: sellerPhotoList[Math.floor(Math.random()*sellerPhotoList.length)],
+
+      banner: "https://media.istockphoto.com/id/1396466280/photo/home-improvement-construction-tools-on-black-background-with-copy-space-banner.jpg?s=612x612&w=0&k=20&c=MPUykaTV-NfspUQHee8fhmOouZrn89wS_2yv_Ih71GU="
+    },
+    {
+      name: sellerNameList[Math.floor(Math.random()*sellerNameList.length)],
+      level: Math.ceil(Math.random()*5),
+      phrase: sellerPhraseList[Math.floor(Math.random()*sellerPhraseList.length)],
+      rating: Math.ceil(Math.random()*5),
+      reviews: Math.ceil(Math.random()*100),
+      cxReviews: [
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        
+    ],
+      ratePerHour: Math.ceil(Math.random()*100 + 200),
+      
+      skills: sellerSkillList[Math.floor(Math.random()*sellerSkillList.length)],
+
+
+      photo: sellerPhotoList[Math.floor(Math.random()*sellerPhotoList.length)],
+
+      banner: "https://media.istockphoto.com/id/1396466280/photo/home-improvement-construction-tools-on-black-background-with-copy-space-banner.jpg?s=612x612&w=0&k=20&c=MPUykaTV-NfspUQHee8fhmOouZrn89wS_2yv_Ih71GU="
+    },
+    {
+      name: sellerNameList[Math.floor(Math.random()*sellerNameList.length)],
+      level: Math.ceil(Math.random()*5),
+      phrase: sellerPhraseList[Math.floor(Math.random()*sellerPhraseList.length)],
+      rating: Math.ceil(Math.random()*5),
+      reviews: Math.ceil(Math.random()*100),
+      cxReviews: [
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        
+    ],
+      ratePerHour: Math.ceil(Math.random()*100 + 200),
+      
+      skills: sellerSkillList[Math.floor(Math.random()*sellerSkillList.length)],
+
+
+      photo: sellerPhotoList[Math.floor(Math.random()*sellerPhotoList.length)],
+
+      banner: "https://media.istockphoto.com/id/1396466280/photo/home-improvement-construction-tools-on-black-background-with-copy-space-banner.jpg?s=612x612&w=0&k=20&c=MPUykaTV-NfspUQHee8fhmOouZrn89wS_2yv_Ih71GU="
+    },
+    {
+      name: sellerNameList[Math.floor(Math.random()*sellerNameList.length)],
+      level: Math.ceil(Math.random()*5),
+      phrase: sellerPhraseList[Math.floor(Math.random()*sellerPhraseList.length)],
+      rating: Math.ceil(Math.random()*5),
+      reviews: Math.ceil(Math.random()*100),
+      cxReviews: [
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        
+    ],
+      ratePerHour: Math.ceil(Math.random()*100 + 200),
+      
+      skills: sellerSkillList[Math.floor(Math.random()*sellerSkillList.length)],
+
+
+      photo: sellerPhotoList[Math.floor(Math.random()*sellerPhotoList.length)],
+
+      banner: "https://media.istockphoto.com/id/1396466280/photo/home-improvement-construction-tools-on-black-background-with-copy-space-banner.jpg?s=612x612&w=0&k=20&c=MPUykaTV-NfspUQHee8fhmOouZrn89wS_2yv_Ih71GU="
+    },
+    {
+      name: sellerNameList[Math.floor(Math.random()*sellerNameList.length)],
+      level: Math.ceil(Math.random()*5),
+      phrase: sellerPhraseList[Math.floor(Math.random()*sellerPhraseList.length)],
+      rating: Math.ceil(Math.random()*5),
+      reviews: Math.ceil(Math.random()*100),
+      cxReviews: [
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        
+    ],
+      ratePerHour: Math.ceil(Math.random()*100 + 200),
+      
+      skills: sellerSkillList[Math.floor(Math.random()*sellerSkillList.length)],
+
+
+      photo: sellerPhotoList[Math.floor(Math.random()*sellerPhotoList.length)],
+
+      banner: "https://media.istockphoto.com/id/1396466280/photo/home-improvement-construction-tools-on-black-background-with-copy-space-banner.jpg?s=612x612&w=0&k=20&c=MPUykaTV-NfspUQHee8fhmOouZrn89wS_2yv_Ih71GU="
+    },
+    {
+      name: sellerNameList[Math.floor(Math.random()*sellerNameList.length)],
+      level: Math.ceil(Math.random()*5),
+      phrase: sellerPhraseList[Math.floor(Math.random()*sellerPhraseList.length)],
+      rating: Math.ceil(Math.random()*5),
+      reviews: Math.ceil(Math.random()*100),
+      cxReviews: [
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        
+    ],
+      ratePerHour: Math.ceil(Math.random()*100 + 200),
+      
+      skills: sellerSkillList[Math.floor(Math.random()*sellerSkillList.length)],
+
+
+      photo: sellerPhotoList[Math.floor(Math.random()*sellerPhotoList.length)],
+
+      banner: "https://media.istockphoto.com/id/1396466280/photo/home-improvement-construction-tools-on-black-background-with-copy-space-banner.jpg?s=612x612&w=0&k=20&c=MPUykaTV-NfspUQHee8fhmOouZrn89wS_2yv_Ih71GU="
+    },
+    {
+      name: sellerNameList[Math.floor(Math.random()*sellerNameList.length)],
+      level: Math.ceil(Math.random()*5),
+      phrase: sellerPhraseList[Math.floor(Math.random()*sellerPhraseList.length)],
+      rating: Math.ceil(Math.random()*5),
+      reviews: Math.ceil(Math.random()*100),
+      cxReviews: [
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        
+    ],
+      ratePerHour: Math.ceil(Math.random()*100 + 200),
+      
+      skills: sellerSkillList[Math.floor(Math.random()*sellerSkillList.length)],
+
+
+      photo: sellerPhotoList[Math.floor(Math.random()*sellerPhotoList.length)],
+
+      banner: "https://media.istockphoto.com/id/1396466280/photo/home-improvement-construction-tools-on-black-background-with-copy-space-banner.jpg?s=612x612&w=0&k=20&c=MPUykaTV-NfspUQHee8fhmOouZrn89wS_2yv_Ih71GU="
+    },
+    {
+      name: sellerNameList[Math.floor(Math.random()*sellerNameList.length)],
+      level: Math.ceil(Math.random()*5),
+      phrase: sellerPhraseList[Math.floor(Math.random()*sellerPhraseList.length)],
+      rating: Math.ceil(Math.random()*5),
+      reviews: Math.ceil(Math.random()*100),
+      cxReviews: [
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        
+    ],
+      ratePerHour: Math.ceil(Math.random()*100 + 200),
+      
+      skills: sellerSkillList[Math.floor(Math.random()*sellerSkillList.length)],
+
+
+      photo: sellerPhotoList[Math.floor(Math.random()*sellerPhotoList.length)],
+
+      banner: "https://media.istockphoto.com/id/1396466280/photo/home-improvement-construction-tools-on-black-background-with-copy-space-banner.jpg?s=612x612&w=0&k=20&c=MPUykaTV-NfspUQHee8fhmOouZrn89wS_2yv_Ih71GU="
+    },
+    {
+      name: sellerNameList[Math.floor(Math.random()*sellerNameList.length)],
+      level: Math.ceil(Math.random()*5),
+      phrase: sellerPhraseList[Math.floor(Math.random()*sellerPhraseList.length)],
+      rating: Math.ceil(Math.random()*5),
+      reviews: Math.ceil(Math.random()*100),
+      cxReviews: [
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        {
+          cxPhoto: cxPhotoList[Math.floor(Math.random()*cxPhotoList.length)],
+          review: cxReviewList[Math.floor(Math.random()*cxReviewList.length)],
+        },
+        
+    ],
+      ratePerHour: Math.ceil(Math.random()*100 + 200),
+      
+      skills: sellerSkillList[Math.floor(Math.random()*sellerSkillList.length)],
+
 
       photo: sellerPhotoList[Math.floor(Math.random()*sellerPhotoList.length)],
 
