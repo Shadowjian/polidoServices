@@ -47,13 +47,11 @@ body {
     width: 100%;
     justify-content: center;
     padding: 5px;
-    /* margin-bottom: 50px; */
     /* background-color: rgba(62, 48, 69, 0.8); */
     background: var(--bg-primary);
     /* background: linear-gradient(272.51deg, #2E2D51 63.71%, rgb(121, 120, 212) 85.16%, rgba(141, 141, 141) 115.31%); */
     box-shadow: 1px 1px 2px;
     z-index: 9;
-    /* height:10vh; */
 
 }
 

@@ -1,5 +1,5 @@
 // import logo from '../../../assets/logo.png'
-import {sellerNameList, sellerPhraseList, sellerPhotoList, cxPhotoList, cxReviewList, sellerSkillList} from './Data'
+import {sellerNameList, sellerPhraseList, sellerPhotoList, cxPhotoList, cxReviewList, sellerSkillList, sellerBannerList} from './Data'
 
 
 
@@ -31,8 +31,8 @@ const sellersObject = [
 
 
       photo: sellerPhotoList[Math.floor(Math.random()*sellerPhotoList.length)],
+      banner: sellerBannerList[Math.floor(Math.random()*sellerBannerList.length)],
 
-      banner: "https://media.istockphoto.com/id/1396466280/photo/home-improvement-construction-tools-on-black-background-with-copy-space-banner.jpg?s=612x612&w=0&k=20&c=MPUykaTV-NfspUQHee8fhmOouZrn89wS_2yv_Ih71GU="
     },
     {
       name: sellerNameList[Math.floor(Math.random()*sellerNameList.length)],
@@ -61,8 +61,8 @@ const sellersObject = [
 
 
       photo: sellerPhotoList[Math.floor(Math.random()*sellerPhotoList.length)],
+      banner: sellerBannerList[Math.floor(Math.random()*sellerBannerList.length)],
 
-      banner: "https://media.istockphoto.com/id/1396466280/photo/home-improvement-construction-tools-on-black-background-with-copy-space-banner.jpg?s=612x612&w=0&k=20&c=MPUykaTV-NfspUQHee8fhmOouZrn89wS_2yv_Ih71GU="
     },
     {
       name: sellerNameList[Math.floor(Math.random()*sellerNameList.length)],
@@ -91,8 +91,8 @@ const sellersObject = [
 
 
       photo: sellerPhotoList[Math.floor(Math.random()*sellerPhotoList.length)],
+      banner: sellerBannerList[Math.floor(Math.random()*sellerBannerList.length)],
 
-      banner: "https://media.istockphoto.com/id/1396466280/photo/home-improvement-construction-tools-on-black-background-with-copy-space-banner.jpg?s=612x612&w=0&k=20&c=MPUykaTV-NfspUQHee8fhmOouZrn89wS_2yv_Ih71GU="
     },
     {
       name: sellerNameList[Math.floor(Math.random()*sellerNameList.length)],
@@ -121,8 +121,8 @@ const sellersObject = [
 
 
       photo: sellerPhotoList[Math.floor(Math.random()*sellerPhotoList.length)],
+      banner: sellerBannerList[Math.floor(Math.random()*sellerBannerList.length)],
 
-      banner: "https://media.istockphoto.com/id/1396466280/photo/home-improvement-construction-tools-on-black-background-with-copy-space-banner.jpg?s=612x612&w=0&k=20&c=MPUykaTV-NfspUQHee8fhmOouZrn89wS_2yv_Ih71GU="
     },
     {
       name: sellerNameList[Math.floor(Math.random()*sellerNameList.length)],
@@ -151,8 +151,8 @@ const sellersObject = [
 
 
       photo: sellerPhotoList[Math.floor(Math.random()*sellerPhotoList.length)],
+      banner: sellerBannerList[Math.floor(Math.random()*sellerBannerList.length)],
 
-      banner: "https://media.istockphoto.com/id/1396466280/photo/home-improvement-construction-tools-on-black-background-with-copy-space-banner.jpg?s=612x612&w=0&k=20&c=MPUykaTV-NfspUQHee8fhmOouZrn89wS_2yv_Ih71GU="
     },
     {
       name: sellerNameList[Math.floor(Math.random()*sellerNameList.length)],
@@ -181,8 +181,8 @@ const sellersObject = [
 
 
       photo: sellerPhotoList[Math.floor(Math.random()*sellerPhotoList.length)],
+      banner: sellerBannerList[Math.floor(Math.random()*sellerBannerList.length)],
 
-      banner: "https://media.istockphoto.com/id/1396466280/photo/home-improvement-construction-tools-on-black-background-with-copy-space-banner.jpg?s=612x612&w=0&k=20&c=MPUykaTV-NfspUQHee8fhmOouZrn89wS_2yv_Ih71GU="
     },
     {
       name: sellerNameList[Math.floor(Math.random()*sellerNameList.length)],
@@ -211,8 +211,8 @@ const sellersObject = [
 
 
       photo: sellerPhotoList[Math.floor(Math.random()*sellerPhotoList.length)],
+      banner: sellerBannerList[Math.floor(Math.random()*sellerBannerList.length)],
 
-      banner: "https://media.istockphoto.com/id/1396466280/photo/home-improvement-construction-tools-on-black-background-with-copy-space-banner.jpg?s=612x612&w=0&k=20&c=MPUykaTV-NfspUQHee8fhmOouZrn89wS_2yv_Ih71GU="
     },
     {
       name: sellerNameList[Math.floor(Math.random()*sellerNameList.length)],
@@ -241,8 +241,8 @@ const sellersObject = [
 
 
       photo: sellerPhotoList[Math.floor(Math.random()*sellerPhotoList.length)],
+      banner: sellerBannerList[Math.floor(Math.random()*sellerBannerList.length)],
 
-      banner: "https://media.istockphoto.com/id/1396466280/photo/home-improvement-construction-tools-on-black-background-with-copy-space-banner.jpg?s=612x612&w=0&k=20&c=MPUykaTV-NfspUQHee8fhmOouZrn89wS_2yv_Ih71GU="
     },
     {
       name: sellerNameList[Math.floor(Math.random()*sellerNameList.length)],
@@ -271,8 +271,8 @@ const sellersObject = [
 
 
       photo: sellerPhotoList[Math.floor(Math.random()*sellerPhotoList.length)],
+      banner: sellerBannerList[Math.floor(Math.random()*sellerBannerList.length)],
 
-      banner: "https://media.istockphoto.com/id/1396466280/photo/home-improvement-construction-tools-on-black-background-with-copy-space-banner.jpg?s=612x612&w=0&k=20&c=MPUykaTV-NfspUQHee8fhmOouZrn89wS_2yv_Ih71GU="
     },
     {
       name: sellerNameList[Math.floor(Math.random()*sellerNameList.length)],
@@ -301,8 +301,8 @@ const sellersObject = [
 
 
       photo: sellerPhotoList[Math.floor(Math.random()*sellerPhotoList.length)],
+      banner: sellerBannerList[Math.floor(Math.random()*sellerBannerList.length)],
 
-      banner: "https://media.istockphoto.com/id/1396466280/photo/home-improvement-construction-tools-on-black-background-with-copy-space-banner.jpg?s=612x612&w=0&k=20&c=MPUykaTV-NfspUQHee8fhmOouZrn89wS_2yv_Ih71GU="
     },
     {
       name: sellerNameList[Math.floor(Math.random()*sellerNameList.length)],
@@ -331,10 +331,10 @@ const sellersObject = [
 
 
       photo: sellerPhotoList[Math.floor(Math.random()*sellerPhotoList.length)],
+      banner: sellerBannerList[Math.floor(Math.random()*sellerBannerList.length)],
 
-      banner: "https://media.istockphoto.com/id/1396466280/photo/home-improvement-construction-tools-on-black-background-with-copy-space-banner.jpg?s=612x612&w=0&k=20&c=MPUykaTV-NfspUQHee8fhmOouZrn89wS_2yv_Ih71GU="
     },
-    
+      
   ]
 
   export default sellersObject

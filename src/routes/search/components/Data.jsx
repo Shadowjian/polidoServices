@@ -42,6 +42,22 @@ export const sellerPhotoList = [
     'https://i.pinimg.com/originals/01/cd/19/01cd19e2f89371dab8c5403b76143964.jpg', 
  
 ]
+export const sellerBannerList = [
+ 'https://www.shutterstock.com/image-photo/equipment-tools-carpenters-workshop-on-260nw-2050075850.jpg',
+ 'https://previews.123rf.com/images/nitr/nitr1701/nitr170100119/69298237-old-tools-wooden-planer-hammer-chisel-in-a-carpentry-workshop-on-dark-background-banner.jpg',
+ 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuWfgojv4hhx6zNFyXkZBh9Rgeqs6vsUDr6QaW9M1ykd-6I3L56Ps69VvbSO6oZaWApPo&usqp=CAU',
+ 'https://www.shutterstock.com/image-photo/gardening-tools-set-flowers-sunny-260nw-1660400572.jpg',
+ 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCc0UrRoTOG2xbKb3uiPah6-Lx8zBKlFkWNg&usqp=CAU',
+ 'https://www.shutterstock.com/image-photo/transport-services-logistics-young-male-260nw-1816591451.jpg',
+ 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMnK_Ueaie3HAFC8qiRIykyjmX4BXwE4785QwReXmijF7cOzD8Jx0sf2FGe9FHJo044Q4&usqp=CAU',
+ 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0zDF3v32bw8yqmAVyIhNlS_DyDuCWBx4bOA&usqp=CAU',
+ 'https://png.pngtree.com/template/20220428/ourmid/pngtree-children-at-home-with-tutor-or-parent-getting-education-banner-image_1301370.jpg',
+ 'https://www.wecarecleaning.co.in/images/banner04.jpg',
+ 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmx7Sgsr1mivYTSUM2UkJWl4ndEiwUbLUhfA&usqp=CAU',
+ 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-9VNhWAB3ZX13ZSBOM1ur5FQiU7gOVWtCug&usqp=CAU',
+ 'https://www.topbrands.sg/wp-content/uploads/2021/12/massage-spa-singapore.jpg',
+ 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS81PoOsaAS2-IUlclN5Dg-QpGj8U6P0ER-dYN8D12PoWYGkKr04G9F5nd9ZWx2GYKUqqs&usqp=CAU',
+]
 
 export const cxPhotoList = [
     'https://www.thenews.com.pk/assets/uploads/updates/2021-05-11/833678_4484867_scarlet-johansoon_updates.jpg',
