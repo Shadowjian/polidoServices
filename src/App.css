@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,500;8..144,700&display=swap');
 
 :root {
-    --bg-color: linear-gradient(-90deg, #281c47, #876cca);
-    --bg-color4: linear-gradient(272.51deg, #2E2D51 63.71%, rgba(86, 84, 171, 0.51693) 85.16%, rgba(141, 141, 141, 0) 115.31%);
+    /* --bg-color: linear-gradient(-90deg, #281c47, #876cca); */
+    /* --bg-color: #494970; */
+    --bg-color: #646493;
+    /* --bg-color4: linear-gradient(272.51deg, #2E2D51 63.71%, rgb(121, 120, 212) 85.16%, rgba(141, 141, 141) 115.31%); */
+    --bg-primary: #494970;
+    --bg-hover: #62628f;
+    --bg-color7: #494970;
 
     --bg-color2: white;
     --bg-color3: rgb(168, 166, 166);
@@ -10,13 +15,17 @@
     --link-color: #e4aa53;
     --card-color: #D5D6E3;
     --profile-color1: #3d2c63;
-    --bg-hover: #876cca;
+    /* --bg-hover: #876cca; */
     --color-hover: rgb(226, 222, 231);
-    --color-text1: #634f94;
-    --color-text2: #997ae7;
+    --color-text1: #494970;
+    --color-text2: #7e7ec4;
+    --color-text3: #cacae4;
+    --color-text4: #dcdcee;
+    --color-text5: #e7e7f1;
+    /* --color-text2: #997ae7;
     --color-text3: #c5b5ee;
     --color-text4: #e3ddf2;
-    --color-text5: #ede9f6;
+    --color-text5: #ede9f6; */
  }
 
 * {
@@ -27,6 +36,8 @@
 
 body {
     font-family: 'Roboto Flex', sans-serif;
+    background: url(./assets/imageOne.png);
+
 }
 
 #navbar-wrapper {
@@ -38,7 +49,8 @@ body {
     padding: 5px;
     /* margin-bottom: 50px; */
     /* background-color: rgba(62, 48, 69, 0.8); */
-    background: linear-gradient(272.51deg, #2E2D51 63.71%, rgba(86, 84, 171, 0.51693) 85.16%, rgba(141, 141, 141, 0) 115.31%);
+    background: var(--bg-primary);
+    /* background: linear-gradient(272.51deg, #2E2D51 63.71%, rgb(121, 120, 212) 85.16%, rgba(141, 141, 141) 115.31%); */
     box-shadow: 1px 1px 2px;
     z-index: 9;
     /* height:10vh; */
@@ -101,7 +113,7 @@ body {
 .profile-btn {
     border-radius: 50%;
     width: 2.5rem;
-    box-shadow: 1px 1px 1px var(--color-text1);
+    box-shadow: 1px 1px 1px var(--color-text2);
 }
 .profile-btn:hover {
     box-shadow: 1px 1px 1px var(--link-color);
@@ -121,7 +133,7 @@ body {
     top: 55px;
     right: 5vw;
     width: 100px;
-    background: #2E2D51;
+    background: var(--bg-primary);
     /* background: var(--profile-color1); */
     color: var(--color-text5);
     border-radius: 5px;
@@ -236,7 +248,7 @@ body {
 }
 .btnl:hover {
     cursor: pointer;
-    background-color: var(--profile-color1);
+    background-color: var(--bg-hover);
     color: white;
 }
 
@@ -264,7 +276,7 @@ body {
 }
 
 .ismember {
-    color: var(--color-text1);
+    color: var(--color-text2);
 }
 .ismember:hover {
     cursor: pointer;

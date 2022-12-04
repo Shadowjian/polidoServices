@@ -1,6 +1,6 @@
 
 .page-container{
-    background: url(../../assets/imageOne.png);
+    /* background: url(../../assets/imageOne.png); */
     margin: auto;
     margin-top: 50px;
     width: 100vw;
@@ -59,7 +59,7 @@
     overflow: auto;
     justify-content: center;
     width: 100%;
-    height: 70vh;
+    /* height: 70vh; */
     
 }
 
@@ -79,13 +79,14 @@
     display: flex;
     flex-direction: column;
     max-width: 300px;
-    max-height: 400px;
+    /* max-height: 300px; */
     box-shadow: 1px 1px 1px;
 }
 
 .card-banner {
     display: flex;
     width: 100%;
+    
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -95,16 +96,17 @@
     width: 100%;
 }
 
-.card-body {
+.search-card-body {
     display: flex;
     flex-direction: column;
+    /* height: 100%; */
     background-color: rgba(0,0,50, 0.4);
     padding: 10px;
     gap: 20px;
 }
 
 .search-card:hover {
-    background-color: var(--bg-hover);
+    background: var(--bg-primary);
     color: var(--color-text5);
     cursor: pointer;
 }
@@ -137,7 +139,8 @@
 .seller-phrase {
     font-style: italic;
     font-weight: 500;
-    font-size: 1.2rem ;
+    font-size: 1rem ;
+    text-align: center;
 }
 
 .rating-star {

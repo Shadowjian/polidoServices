@@ -13,7 +13,6 @@ function NavModal({hideNav}) {
       <Link onClick={hideNav} className="link" to="/">Home Page</Link>
       <Link onClick={hideNav} className="link" to="about">About</Link>
       <Link onClick={hideNav} className="link" to="search">Search</Link>
-      <Link onClick={hideNav} className="link" to="contacts">Contacts</Link>
   </div>
   )
 }

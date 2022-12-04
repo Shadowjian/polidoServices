@@ -11,7 +11,7 @@ function SearchCard ({showSeller, seller, index}) {
             <div className='card-banner'>
               <img src={seller.banner} alt="" />
             </div>
-            <div className='card-body'>
+            <div className='search-card-body'>
               <div className='seller-wrapper'>
                 <div className='seller-pic'>
                   <img src={seller.photo} alt="" />
