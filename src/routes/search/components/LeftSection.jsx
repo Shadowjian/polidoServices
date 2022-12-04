@@ -2,9 +2,14 @@ import React from 'react'
 
 const php = "\u20B1"
 
-function SearchCard ({showSeller, seller}) {
+function SearchCard ({showSeller, seller, index}) {
+
+
     return (
-      <div className='search-card' onClick={showSeller}>
+
+      <div className='search-card'>
+      <div className='card-layer' onClick={showSeller} id={index}>
+      </div>
           <div className='card-banner'>
             <img src={seller.banner} alt="" />
           </div>
@@ -27,12 +32,14 @@ function SearchCard ({showSeller, seller}) {
             <div className='rate-per-hour'>
               <div>Service Rate: <span className='service-rate'>{php}{seller.ratePerHour} per hour</span></div>
             </div>
-          </div>
+      </div>
       </div>
     )
   }
 
-function LeftSection({sellers, showSeller, searchInput }) {
+  
+  function LeftSection({sellers, showSeller, searchInput }) {
+  let index = []
 
     return (
         <div className="search-result">
@@ -45,10 +52,15 @@ function LeftSection({sellers, showSeller, searchInput }) {
           }
             {/* SEARCH-CARDS */}
             <div className="search-result-cards">
-                {sellers.map((seller, id)=> (<SearchCard key={id} seller={seller} showSeller={showSeller}/>))}
+                {sellers.map((seller, id)=> {
+                  index = [...index, id]
+                  return <SearchCard key = {id} seller={seller} index = {index} showSeller={showSeller}/>})}
+                  
             </div>
         </div>
     )
 }
+
+
 
 export default LeftSection

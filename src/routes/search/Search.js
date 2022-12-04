@@ -11,28 +11,36 @@ function Search() {
   const [sellers, setSellers] = useState([])
   const [searchInput, setSearchInput] = useState('')
   const [sellerProfile, setSellerProfile] = useState(false)
+  const [sellerData, setSellerData] = useState({})
+  // const [loggedIn, setLoggedIn] = useState(false)
 
   useEffect(()=>{
     setSellers(Sellers)
+    console.log('render')
   },[])
 
-  console.log(searchInput)
+  // console.log(searchInput)
 
   const searchSellers =(e)=> {
       setSearchInput(e.target.value)
-      setSellers(Sellers.filter((seller, i)=>{
+      setSellers(Sellers.filter((seller)=>{
         return seller.skills.includes(searchInput.toLowerCase())
       }))
   }
 
-  const showSeller = () => {
+  const showSeller = (e) => {
     setSellerProfile(true)
+    // console.log(sellers)
+    const index = (e.target.getAttribute('id').split(','))
+    // console.log(index)
+    setSellerData((sellers[index.splice(-1)]))
+    console.log(sellerData)
   }
   const hideSeller = () => {
     setSellerProfile(false)
   }
 
-  console.log(sellers)
+  // console.log(sellers)
   return (
     <div className='page-container'>
       <div className='left'>
@@ -42,7 +50,7 @@ function Search() {
       {sellerProfile &&
           <>
             <div className='overlay' onClick={hideSeller}></div> 
-            <RightSection hideSeller = {hideSeller}/>
+            <RightSection hideSeller = {hideSeller} sellerData={sellerData}/>
           </> 
       }
     </div>

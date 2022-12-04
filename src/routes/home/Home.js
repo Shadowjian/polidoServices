@@ -3,6 +3,8 @@
 import React from 'react'
 import Hero from './components/Hero'
 import Services from './components/Services'
+import How from './components/How'
+import Find from './components/Find'
 
 
 import './Home.css'
@@ -14,6 +16,8 @@ function Home() {
     <>
       <Hero />
       <Services /> 
+      <How />
+      <Find />
     </>
   )
 }
