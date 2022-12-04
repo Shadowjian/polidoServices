@@ -2,7 +2,6 @@
 import {sellerNameList, sellerPhraseList, sellerPhotoList, cxPhotoList, cxReviewList, sellerSkillList, sellerBannerList} from './Data'
 
 
-
 const sellersObject = [
     {
       name: sellerNameList[Math.floor(Math.random()*sellerNameList.length)],
