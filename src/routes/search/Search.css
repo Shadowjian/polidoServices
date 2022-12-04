@@ -4,48 +4,22 @@
     margin: auto;
     margin-top: 50px;
     width: 100vw;
-    /* max-width: 1400px; */
     display: flex;
     justify-content: center;
-    /* flex-direction: column; */
-    /* height: 90vh; */
-    /* align-items: start; */
     gap: 10px;
-    /* padding: 20px; */
     overflow: hidden;
 }
 
-.card-layer {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0, 0);
-    z-index: 1;
-}
+
 
 .left {
     display: flex;
     flex-direction: column;
-    /* width: 50%; */
     height: 100%;
-    /* border: solid red 1px; */
     align-items: center;
     gap: 10px;
 }
-.right {
-    position: fixed;
-    top: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    /* right: 20px; */
-    height: 100vh;
-    /* border: solid blue 1px; */
-    background-color: lightcyan;
-    z-index: 9999;
-}
+
 .overlay{
     position: fixed;
     top: 0;
@@ -62,24 +36,12 @@
 
 .search-page-container {
     display: flex;
-    /* align-self: flex-start ; */
     width: 90vw;
-    /* border: 1px solid white; */
     padding: 10px;
 }
 .search-page-input {
-    /* flex: 3; */
     padding: 10px;
     width: 100%;
-}
-
-.filter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    text-align: center;
-    border: 1px solid white;
 }
 
 .search-result {
@@ -88,98 +50,42 @@
     padding: 10px;
     width: 90vw;
     padding: 10px;
-    /* border: solid white 1px; */
-    /* align-items: flex-start; */
-    /* justify-content: center; */
 }
 
 .search-result-cards {
     display: flex;
     flex-wrap: wrap;
-
-    /* align-items: flex-start; */
     gap: 20px;
     overflow: auto;
     justify-content: center;
     width: 100%;
     height: 70vh;
-    /* background-color: salmon; */
     
 }
 
-
-.search-card:hover {
-    background-color: rgb(128, 102, 168);
-    color: rgb(226, 222, 231);
-    cursor: pointer;
-}
-
-/* RIGHT COMPONENTS */
-
-.profile-banner {
-    padding: 20px;
-    color: white;
-    width: 100%;
-    height: 300px;
-    background-color: purple;
-}
-
-.right img {
-    position: relative;
-    top: -5px;
-    right: 20px;
-    width: 150%;
-}
-
-.profile-picture {
-    position: relative;
-    top: -50px;
-    left: 40px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    /* border: 2px red solid; */
-    overflow: hidden;
-}
-
-.testi-heading {
-    text-align: center;
-}
-
-.testimonials {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.testi {
-    display: flex;
-    justify-content: space-around;
-}
-
 /* SEARCH-CARD COMPONENT */
+
+.card-layer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0);
+    z-index: 1;
+}
 
 .search-card {
     position: relative;
     display: flex;
     flex-direction: column;
-    /* width: 200px; */
-    /* min-width: 100px; */
     max-width: 300px;
-    /* flex: 1 1 200px; */
-    /* flex: 1 1 200px; */
     max-height: 400px;
-    /* height: 300px; */
-    /* height: 15rem; */
-    /* color: white; */
-    box-shadow: 1px 1px 1px rgb(94, 80, 103);
+    box-shadow: 1px 1px 1px;
 }
 
 .card-banner {
     display: flex;
     width: 100%;
-    /* height: 40%; */
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -192,17 +98,25 @@
 .card-body {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    background-color: rgba(0,0,0, 0.3);
-    height: fit-content;
+    background-color: rgba(0,0,50, 0.4);
     padding: 10px;
     gap: 20px;
+}
+
+.search-card:hover {
+    background-color: var(--bg-hover);
+    color: var(--color-text5);
+    cursor: pointer;
 }
 
 .seller-wrapper {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.seller-name {
+    color: var(--link-color)
 }
 
 .seller-pic {
@@ -213,6 +127,7 @@
     width: 3.2rem;
     height: 3.2rem;
     overflow: hidden;
+    border: solid 1px rgb(190, 183, 183);
 }
 
 .seller-pic img {
@@ -226,7 +141,7 @@
 }
 
 .rating-star {
-    color: rgb(204, 204, 7);
+    color: var(--link-color);
 }
 
 .rate-per-hour {
