@@ -1,13 +1,32 @@
 {
   "files": {
-    "main.css": "/polidoServices/static/css/main.5b3d9f5a.css",
-    "main.js": "/polidoServices/static/js/main.0759500a.js",
+    "main.css": "/polidoServices/static/css/main.215007b0.css",
+    "main.js": "/polidoServices/static/js/main.b834b5c9.js",
+    "static/media/laundry.jpg": "/polidoServices/static/media/laundry.9a9d518e8815ce90813d.jpg",
+    "static/media/faqbanner.jpg": "/polidoServices/static/media/faqbanner.214d04d83866660466a7.jpg",
+    "static/media/home.jpg": "/polidoServices/static/media/home.c2b65ccf09723b7e9d95.jpg",
+    "static/media/transport.jpg": "/polidoServices/static/media/transport.7f0e8954479cc5b00970.jpg",
+    "static/media/polidoEmp.jpg": "/polidoServices/static/media/polidoEmp.3327c3c3ee7f0742844b.jpg",
+    "static/media/polidoOffice.jpg": "/polidoServices/static/media/polidoOffice.1edec68c31b63bac9b6d.jpg",
+    "static/media/repair.jpg": "/polidoServices/static/media/repair.45dec89507bf2ec57b91.jpg",
+    "static/media/polidoGoal.png": "/polidoServices/static/media/polidoGoal.480bc3643b71890738bf.png",
+    "static/media/webDevOne.jpg": "/polidoServices/static/media/webDevOne.64570ff27a04dbe52692.jpg",
+    "static/media/webDevThree.jpg": "/polidoServices/static/media/webDevThree.1994aad9c0fce2e5dd93.jpg",
+    "static/media/webDevTwo.jpg": "/polidoServices/static/media/webDevTwo.31772743e990279c0393.jpg",
+    "static/media/letusknow.png": "/polidoServices/static/media/letusknow.7a609126a9c56c4978d8.png",
+    "static/media/imageOne.png": "/polidoServices/static/media/imageOne.e34c148c5d536c9ce428.png",
+    "static/media/polidos.png": "/polidoServices/static/media/polidos.5c5339cd95aa341f015d.png",
+    "static/media/review.png": "/polidoServices/static/media/review.49ad46f2efb08bc7d2e1.png",
+    "static/media/legwork.png": "/polidoServices/static/media/legwork.dcc923ee424f85ffa1bb.png",
+    "static/media/compare.png": "/polidoServices/static/media/compare.e3a0d1e39f686941e61c.png",
+    "static/media/logo.png": "/polidoServices/static/media/logo.75cc54661e9d31595aab.png",
+    "static/media/profilePic.svg": "/polidoServices/static/media/profilePic.8b30839338625210f0d3d1dbd2ec8278.svg",
     "index.html": "/polidoServices/index.html",
-    "main.5b3d9f5a.css.map": "/polidoServices/static/css/main.5b3d9f5a.css.map",
-    "main.0759500a.js.map": "/polidoServices/static/js/main.0759500a.js.map"
+    "main.215007b0.css.map": "/polidoServices/static/css/main.215007b0.css.map",
+    "main.b834b5c9.js.map": "/polidoServices/static/js/main.b834b5c9.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b3d9f5a.css",
-    "static/js/main.0759500a.js"
+    "static/css/main.215007b0.css",
+    "static/js/main.b834b5c9.js"
   ]
 }
