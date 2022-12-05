@@ -2,10 +2,21 @@
 
 :root {
     --bg-color: linear-gradient(-90deg, #281c47, #876cca);
+    --bg-color4: linear-gradient(272.51deg, #2E2D51 63.71%, rgba(86, 84, 171, 0.51693) 85.16%, rgba(141, 141, 141, 0) 115.31%);
+
     --bg-color2: white;
     --bg-color3: rgb(168, 166, 166);
-    --link-color: #ff9900;
+    /* --link-color: #ff9900; */
+    --link-color: #e4aa53;
     --card-color: #D5D6E3;
+    --profile-color1: #3d2c63;
+    --bg-hover: #876cca;
+    --color-hover: rgb(226, 222, 231);
+    --color-text1: #634f94;
+    --color-text2: #997ae7;
+    --color-text3: #c5b5ee;
+    --color-text4: #e3ddf2;
+    --color-text5: #ede9f6;
  }
 
 * {
@@ -46,21 +57,21 @@ body {
 #navbar .links {
     display: flex;
     /* border: solid green; */
-    padding: 5px;
-    gap: 10px;
+    align-items: center;
+    gap: 20px;
 
 }
 
 .links *{
     /* color: rgb(205, 181, 237); */
-    color: rgb(231, 226, 237);
+    color: var(--color-text5);
 
     text-decoration: none;
     /* font-size: 1rem; */
 }
 
 .links *:hover {
-    color: rgb(243, 227, 243);
+    color: var(--link-color);
     cursor: pointer;
 }
 
@@ -77,8 +88,7 @@ body {
     height: 10vh;
     /* background-color: rgba(53, 29, 66, 0.8); */
     background: linear-gradient(272.51deg, #2E2D51 63.71%, rgba(86, 84, 171, 0.51693) 85.16%, rgba(141, 141, 141, 0) 115.31%)
-
-    
+ 
 }
 
 .nav-btn {
@@ -87,9 +97,52 @@ body {
 
 .login-btn {
     display: none;
+    
 }
-.nav-btn:hover, #login-btn:hover {
+.profile-btn {
+    border-radius: 50%;
+    width: 2.5rem;
+    box-shadow: 1px 1px 1px var(--color-text1);
+}
+.profile-btn:hover {
+    box-shadow: 1px 1px 1px var(--link-color);
+}
+
+.profile-btn img {
+    width: 100%;
+}
+
+.profile-drop-down {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    top: 55px;
+    right: 5vw;
+    width: 100px;
+    background: #2E2D51;
+    /* background: var(--profile-color1); */
+    color: var(--color-text5);
+    border-radius: 5px;
+    box-shadow: -2px 2px 2px var(--color-text5);
+}
+
+.profile-drop-down div:hover {
+    /* background-color: var(--bg-hover); */
+    color: var(--link-color);
     cursor: pointer;
+}
+.profile-drop-down div {
+    width: 100%;
+    padding: 10px;
+}
+
+
+.nav-btn:hover, .login-btn:hover {
+    cursor: pointer;
+    color: var(--link-color)
 }
 
 .nav-modal-links {
@@ -115,19 +168,7 @@ body {
     color: rgb(112, 73, 147);
 }
 
-@media (max-width: 500px){
-    #navbar .links {
-        display: none;
-    }
-    .login-btn, .nav-btn {
-        display: block;
-        color: rgb(231, 226, 237);
-    }
-    .nav-btn {
-        font-size: x-large;
-    }
 
-}
 
 
 /* form style */
@@ -146,6 +187,7 @@ body {
     border-radius: 50%;
     border-bottom: none;
     border-right: none;
+    color: var(--link-color)
 }
 
 #login-modal {
@@ -158,9 +200,10 @@ body {
     /* padding: 20px; */
     top: 0;
     right: 0;
-    width: 100vw;
+    width: 80vw;
+    max-width: 800px;
     height: 100vh;
-    background-color: rgb(248, 242, 251);
+    background-color: var(--color-text4);
     z-index: 100;
 }
 
@@ -169,17 +212,23 @@ body {
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    width: 70%;
+}
+
+.join-heading {
+    color: var(--profile-color1)
 }
 
 .login-member {
     position: absolute;
+    color: var(--profile-color1);
     bottom: 40px;
 }
 
 .btnl {
     /* background-color: purple; */
     padding: 10px;
-    width: 60vw;
+    width: 100%;
     color: rgb(81, 43, 122);
     display: flex;
     justify-content: center;
@@ -188,20 +237,60 @@ body {
 }
 .btnl:hover {
     cursor: pointer;
-    background-color: rgb(111, 52, 111);
+    background-color: var(--profile-color1);
     color: white;
 }
 
-#email {
-    width: 60vw;
-    padding: 10px;
+.join-modal .input {
+    width: 100%;
+    /* border: solid 1px red; */
     font-size: large;
 }
 
+#email, #password {
+    font-size: large;
+    width: 100%;
+    padding: 10px;
+}
+
+.forgot-password {
+    color: var(--color-text2);
+    font-size: small;
+    align-self: end;
+}
+
+.forgot-password:hover {
+    cursor: pointer;
+    color: var(--link-color)
+}
+
 .ismember {
-    color: rgb(83, 149, 83);
+    color: var(--color-text1);
 }
 .ismember:hover {
     cursor: pointer;
-    color: green;
+    color: var(--link-color);
 }
+
+
+@media (max-width: 500px){
+    #navbar .links {
+        display: none;
+    }
+    .login-btn, .nav-btn {
+        display: block;
+        color: rgb(231, 226, 237);
+    }
+    .nav-btn {
+        font-size: x-large;
+    }
+    #login-modal {
+        width: 100vw;
+    }
+    #seller-profile {
+        width: 100vw;
+    }
+
+}
+
+

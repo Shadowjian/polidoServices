@@ -5,6 +5,7 @@ import LeftSection from './components/LeftSection'
 import SearchSection from './components/SearchSection'
 import Sellers from './components/Sellers'
 
+
 // PAGE LAYOUT
 
 function Search() {

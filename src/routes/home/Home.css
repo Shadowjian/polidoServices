@@ -6,110 +6,121 @@
     background-attachment: fixed;
     background-position: center;
     width: auto;
-    width: auto;
-    height: 500vh;
-    margin-bottom: 12px;
+    min-height: 80vh;
 }
 
-.landing1 {
+.landing-row {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    min-height: 100vh; 
 }
-.flex-logo {
-    min-height: 425px;
-    align-items: center;
+
+/*>>>>>> left-landing <<<<<<*/
+
+.left-landing {
     display: flex;
     justify-content: center;
-    flex-grow: 2;
-}
-.flex-logo img {
-    height: 300px;
-    width: 300px;
-}
-.flex-slogan {
-    min-height: 400px;
-    flex-grow: 2;
-    align-items: center;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
 }
+
+.slogan {
+    min-height: 440px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .slogan-title span {
     font-size: 50px;
     color: #ff9900;
 }
+
 .hire-btn {
-    background: var(--bg-color);
+    background: var(--bg-color3);
     border: none;
-    border-radius: 15px;
-    height: 50px;
-    font-size: 20px;
-    color: #FFFFFF;
+    border-radius: 10px;
+    height: 40px;
     margin: 8px 0;
-    padding: 0px;
+    padding: 5px;
     width: 200px;
     text-align: center;
 }
+
 .hire-btn:hover {
     cursor: pointer;
     box-shadow: 0 2px 50px 0 #876cca;
     transition: 1s;
 }
-.landing2 {
-    display: flex;
-    flex-wrap: wrap;
+
+.hirebtn-txt {
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 700;
 }
-.flex-newsletter {
+
+.newsletter {
     min-height: 440px;
     align-items: center;
     text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    flex-grow: 2;
 }
+
 .email-form {
     display: flex;
     justify-content: center;
     padding: 5px;
 }
+
 .email-input {
-    height: 50px;
+    height: 45px;
+    width: 300px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 15px 0 0 15px;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     font-weight: 400;
     cursor: text;
 }
+
 .subs-btn {
-    background: var(--bg-color);
+    background: var(--bg-color3);
     border: none;
-    border-radius: 0 15px 15px 0;
-    height: 50px;
-    font-size: 20px;
-    color: #FFFFFF;
+    border-radius: 0 10px 10px 0;
+    height: 45px;
+    font-size: 15px;
+    color: black;
+    font-weight: 700;
     margin: 8px 0;
     padding: 0px;
     width: 200px;
     text-align: center;
 }
+
 .subs-btn:hover {
     cursor: pointer;
     box-shadow: 0 2px 50px 0 #876cca;
     transition: 1s;
 }
+
+
+/*>>>>>> Right-landing <<<<<<*/
+
 .flex-workers {
     min-height: 440px;
-    flex-grow: 2;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
+
 .flex-workers img {
     height: auto;
     width: 100%;
@@ -117,7 +128,9 @@
 
 /* Home Landing Page END*/
 
-/* Services =====================================*/
+
+/* Services ====================*/
+
 .svc-container {
     background: var(--bg-color3);
     min-height: 80vh;
@@ -126,8 +139,9 @@
     justify-content: center;
     align-items: center;
     opacity: .9;
-    padding-top: 20px;
+    padding-top: 50px;
 }
+
 .svc-header {
     min-height: 250px;
     width: 50%;
@@ -135,23 +149,29 @@
     display: flex;
     flex-direction: column;
 }
+
 .svc-title {
     color: black;
     font-weight: 700;
     font-size: 40px;
+    margin-bottom: 15px;
 }
+
 .description {
     color: black;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 25px;
     padding-bottom: 15px;
 }
+
 .svc-cards {
     width: 95%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 20px;
 }
+
 .card-row {
     width: 90%;
     display: flex;
@@ -159,6 +179,7 @@
     flex-wrap: wrap;
     padding: 10px;
 }
+
 .card { 
     background: var(--card-color);
     height: auto;
@@ -171,28 +192,44 @@
     display: flex;
     flex-direction: column;
 }
+
+.card-body {
+    height: 220px;
+    border-radius: 0 0 10px 10px;
+}
+
 .svc-images {
     border-radius: 10px 10px 0 0;
     height: 200px;
     width: 100%;
     align-self: center;
-    margin-left: 38px;
 }
+
 .card-title {
     font-size: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 2px;
 }
+
+.card-text {
+    font-size: 15px;
+    text-align: center;
+}
+
 .card:hover {
     transform: scale(1.1);
     z-index: 1;
 }
+
 .btn {
     padding: 10px;
-    background: var(--bg-color);
-    color: white;
-    border: none;
+    background: var(--bg-color3);
+    color: black;
+    border: 1px solid black;
+    font-weight: 700;
     border-radius: 5px;
+    width: 150px;
 }
+
 .btn:hover {
     cursor: pointer;
     box-shadow: 0 2px 50px 0 #876cca;
@@ -201,7 +238,9 @@
 
 /* Services END*/
 
-/* How it works =====================================*/
+
+/* How it works ====================*/
+
 .hiw-title {
     background: var(--bg-color);
     color: var(--link-color);
@@ -213,13 +252,16 @@
     font-size: 80px;
     padding-top: 20px;
 }
+
 /* STEP 01 */
+
 .step-container1 {
     background: var(--bg-color2);
     display: flex;
     justify-content: center;
     opacity: .9;
 }
+
 .img-box1 {
     background: url(../../assets/letusknow.png);
     background-repeat: no-repeat;
@@ -227,6 +269,7 @@
     height: 600px;
     width: 60%;
 }
+
 .step-row {
     width: 100%;
     max-width: 1000px;
@@ -234,6 +277,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .step-box {
     background: var(--card-color);
     color: black;
@@ -247,28 +291,36 @@
     margin-left: -90px;
     transition: 0.2s;
 }
+
 .step-box:hover {
     transform: scale(1.1);
     z-index: 1;
 }
+
 .step-num {
-    font-size: 30px;
-}
-.step-title {
     font-size: 40px;
+    color: var(--link-color);
+}
+
+.step-title {
+    font-size: 30px;
     font-weight: lighter;
 }
+
 .step-info {
     margin: 20px 0;
     font-weight: 500;
     line-height: 25px;
 }
+
 /* Step 02 */
+
 .step-container2 {
     background: var(--bg-color3);
     display: flex;
     justify-content: center;
 }
+
 .img-box2 {
     background: url(../../assets/legwork.png);
     background-repeat: no-repeat;
@@ -276,6 +328,7 @@
     height: 600px;
     width: 70%;
 }
+
 .step-box2 {
     background: var(--card-color);
     color: black;
@@ -289,11 +342,14 @@
     margin: 10px;
     transition: 0.2s;
 }
+
 .step-box2:hover {
     transform: scale(1.1);
     z-index: 1;
 }
+
 /* Step 03 */
+
 .step-container3 {
     background: var(--bg-color2);
     display: flex;
@@ -302,6 +358,7 @@
     height: 600px;
     opacity: .9;
 }
+
 .img-box3 {
     height: 400px;
     width: 100%;
@@ -309,10 +366,12 @@
     justify-content: center;
     align-items: center;
 }
+
 .box3-image {
     height: 450px;
     width: 520px;
 }
+
 .step-box3 {
     background: var(--card-color);
     color: black;
@@ -325,16 +384,20 @@
     border-radius: 8px;
     transition: 0.2s;
 }
+
 .step-box3:hover {
     transform: scale(1.1);
     z-index: 1;
 }
+
 /* Step 04 */
+
 .step-container4 {
     background: var(--bg-color3);
     display: flex;
     justify-content: center;
 }
+
 .img-box4 {
     display: flex;
     justify-content: center;
@@ -342,10 +405,12 @@
     height: 600px;
     width: 70%;
 }
+
 .box4-image {
     height: 550px;
     width: 390px;
 }
+
 .step-box4 {
     background: var(--card-color);
     color: black;
@@ -359,12 +424,13 @@
     margin: 10px;
     transition: 0.2s;
 }
+
 .step-box4:hover {
     transform: scale(1.1);
     z-index: 1;
 }
 
-/* Search form =====================================*/
+/* Search form =================*/
 
 .search-container {
     background: var(--bg-color2);
@@ -375,13 +441,16 @@
     align-items: center;
     text-align: center;
 }
+
 .search-h1 {
     font-size: 60px;
 }
+
 .search-h2 {
     font-size: 30px;
     color: var(--link-color);
 }
+
 .search-input {
     height: 50px;
     width: 500px;
@@ -395,6 +464,7 @@
     font-weight: 400;
     cursor: text;
 }
+
 .search-btn {
     background: var(--bg-color);
     border: none;
@@ -406,11 +476,13 @@
     width: 200px;
     text-align: center;
 }
+
 .search-btn:hover {
     cursor: pointer;
     box-shadow: 0 2px 50px 0 #876cca;
     transition: 1s;
 }
+
 
 /* =========Media Query========= */
 
@@ -432,14 +504,18 @@
         font-size: 15px;
     }
 
+
     /* How it works */
-.hiw-title {
+
+    .hiw-title {
     min-height: 300px;
     font-size: 70px;
     }
 
     /* STEP 01 */
-    .step-container1 {  
+
+    .step-container1 { 
+
     }
     .img-box1 {
         height: 400px;
@@ -458,22 +534,24 @@
         padding: 20px;
     }
     .step-num {
-        font-size: 20px;
+        font-size: 30px;
     }
     .step-title {
-        font-size: 30px;
+        font-size: 20px;
     }
     .step-info {
         margin: 10px 0;
     }
 
     /* Step 02 */
+
     .step-container2 {
     }
     .img-box2 {
+        background-position: center;
         height: 400px;
         width: 70%;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
     .step-box2 {
         min-height: 250px;
@@ -481,16 +559,17 @@
     }
 
     /* Step 03 */
+
     .step-container3 {
-        height: 500px;
+        height: 400px;
     }
     .img-box3 {
         height: 250px;
         width: 50%;
     }
     .box3-image {
-        height: 400px;
-        width: 500px;
+        height: 350px;
+        width: 400px;
     }
     .step-box3 {
         min-height: 250px;
@@ -499,15 +578,16 @@
     }
 
     /* Step 04 */
+
     .step-container4 {
-        height: 500px;
+        height: 400px;
     }
     .img-box4 {
         height: 500px;
     }
     .box4-image {
-        height: 500px;
-        width: 350px;
+        height: 450px;
+        width: 300px;
     }
     .step-box4 {
         min-height: 250px;
@@ -515,7 +595,9 @@
         padding: 20px;
     }
 
-    /* Search form =====================================*/
+
+    /* Search form ===================*/
+
     .search-container {
         height: 400px;
     }
@@ -533,6 +615,413 @@
     .search-btn {
         height: 40px;
         font-size: 15px;
+        width: 100px;
+    }
+}
+
+
+/* >>> Media Query Mobile view <<<< */
+
+@media only screen and (max-width: 800px) {
+    /*>>>>>> left-landing <<<<<<*/
+    .slogan {
+        min-height: 340px;
+    }
+    .slogan-title span {
+        font-size: 35px;
+    }
+    .newsletter {
+        min-height: 340px;
+    }
+    .email-form {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+    }
+    .email-input {
+        height: 35px;
+        width: 250px;
+        border-radius: 10px 0 0 10px;
+        font-size: 12px;
+    }
+    .subs-btn {
+        height: 35px;
+        font-size: 12px;
+        width: 100px;
+    }
+    .newsletter h3 {
+        font-size: 15px;
+    }
+
+    /*>>>>>> Right-landing <<<<<<*/
+
+    .flex-workers {
+        min-height: 340px;
+    }
+    .flex-workers img {
+        height: auto;
+        width: 80%;
+    }
+
+    /* Home Landing Page END*/
+
+    /* Services ====================*/
+
+    .svc-container {
+        background: var(--bg-color3);
+        min-height: 80vh;
+    }
+    .svc-header {
+        min-height: 250px;
+        width: 50%;
+    }
+    .svc-title {
+        font-size: 30px;
+    }
+    .description {
+        font-size: 15px;
+    }
+    .card { 
+        height: auto;
+        width: 250px;
+    }
+    .svc-images {
+        border-radius: 10px 10px 0 0;
+        height: 200px;
+        width: 100%;
+        align-self: center;
+    }
+    .card-title {
+        font-size: 15px;
+    }
+    .btn {
+        width: 100px;
+    }
+
+    /* Services END*/
+
+    /* How it works ====================*/
+
+    .hiw-title {
+        min-height: 350px;
+        font-size: 60px;
+    }
+
+    /* STEP 01 */
+
+    .step-container1 { 
+
+    }
+    .img-box1 {
+        height: 330px;
+        width: 50%;
+    }
+    .step-row {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .step-box {
+        height: 90px;
+        width: 50%;
+        padding: 30px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .step-num {
+        font-size: 25px;
+    }
+    .step-title {
+        font-size: 20px;
+    }
+    .step-info {
+        font-size: 15px;
+    }
+
+    /* Step 02 */
+
+    .img-box2 {
+        background-position: center;
+        height: 400px;
+        width: 70%;
+        margin-bottom: 0;
+    }
+    .step-box2 {
+        height: 90px;
+        width: 50%;
+        padding: 30px;
+        margin-top: 20px;
+    }
+ 
+    /* Step 03 */
+
+    .step-container3 {
+        height: 600px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .img-box3 {
+        height: 300px;
+    }
+    .box3-image {
+        height: 350px;
+        width: 400px;
+    }
+    .step-box3 {
+        height: 90px;
+        width: 50%;
+        padding: 30px;
+        margin-top: 20px;
+    }
+    /* Step 04 */
+
+    .step-container4 {
+        min-height: 600px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .img-box4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 70%;
+    }
+    .box4-image {
+        height: 350px;
+        width: 290px;
+    }
+    .step-box4 {
+        height: 90px;
+        width: 50%;
+        padding: 30px;
+        margin-top: 20px;
+    }
+
+    /* Search form =================*/
+
+    .search-container {
+        height: 400px;
+    }
+    .search-h1 {
+        font-size: 40px;
+    }
+    .search-h2 {
+        font-size: 20px;
+    }
+    .search-input {
+        height: 40px;
+        width: 300px;
+        border-radius: 10px 0 0 10px;
+        font-size: 15px;
+    }
+    .search-btn {
+        border-radius: 0 10px 10px 0;
+        height: 40px;
+        font-size: 15px;
+        width: 150px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    /*>>>>>> left-landing <<<<<<*/
+    .slogan {
+        min-height: 240px;
+    }
+    .slogan-title span {
+        font-size: 25px;
+    }
+    .slogan-title {
+        font-size: 15px;
+    }
+    .slogan h3 {
+        font-size: 12px;
+    }
+    .hire-btn {
+        border-radius: 5px;
+        height: 25px;
+        width: 150px;
+    }
+    .hirebtn-txt {
+        font-size: 10px;
+    }
+    .newsletter {
+        min-height: 240px;
+    }
+    .email-form {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+    }
+    .email-input {
+        height: 25px;
+        width: 150px;
+        border-radius: 5px 0 0 5px;
+        font-size: 10px;
+    }
+    .subs-btn {
+        height: 25px;
+        font-size: 10px;
+        width: 80px;
+        border-radius: 0 5px 5px 0;
+    }
+    .newsletter h3 {
+        font-size: 10px;
+    }
+
+
+    /*>>>>>> Right-landing <<<<<<*/
+    .flex-workers {
+        /* min-height: 340px; */
+    }
+    .flex-workers img {
+
+    }
+
+    /* Home Landing Page END*/
+
+    /* Services ====================*/
+
+    .svc-container {
+        min-height: 80vh;
+    }
+    .svc-header {
+        min-height: 175px;
+        width: 80%;
+    }
+    .svc-title {
+        font-size: 20px;
+    }
+    .description {
+        font-size: 13px;
+    }
+    .card { 
+        height: auto;
+        width: 250px;
+    }
+    .svc-images {
+        border-radius: 10px 10px 0 0;
+        height: 150px;
+        width: 100%;
+        align-self: center;
+    }
+    .card-title {
+        font-size: 15px;
+    }
+    .card-text {
+        font-size: 12px;
+    }
+
+    /* Services END*/
+
+    /* How it works ====================*/
+
+    .hiw-title {
+        min-height: 250px;
+        font-size: 40px;
+    }
+
+    /* STEP 01 */
+
+    .step-container1 { 
+
+    }
+    .img-box1 {
+        height: 200px;
+        width: 50%;
+        background-size: center;
+    }
+    .step-row {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .step-box {
+        min-height: 150px;
+        width: 80%;
+        padding: 10px;
+    }
+    .step-num {
+        font-size: 20px;
+    }
+    .step-title {
+        font-size: 15px;
+    }
+    .step-info {
+        font-size: 12px;
+    }
+
+    /* Step 02 */
+
+    .img-box2 {
+        height: 220px;
+        width: 80%;
+    }
+    .step-box2 {
+        min-height: 150px;
+        width: 80%;
+        padding: 10px;
+    }
+ 
+    /* Step 03 */
+
+    .step-container3 {
+        height: 500px;
+    }
+    .img-box3 {
+        height: 300px;
+    }
+    .box3-image {
+        height: 300px;
+        width: 320px;
+    }
+    .step-box3 {
+        min-height: 150px;
+        width: 80%;
+        padding: 10px;
+    }
+    
+    /* Step 04 */
+    .step-container4 {
+        min-height: 500px;
+    }
+    .img-box4 {
+        height: 300px;
+        width: 70%;
+    }
+    .box4-image {
+        height: 300px;
+        width: 200px;
+    }
+    .step-box4 {
+        min-height: 150px;
+        width: 80%;
+        padding: 10px;
+    }
+
+    /* Search form =================*/
+
+    .search-container {
+        height: 400px;
+    }
+    .search-h1 {
+        font-size: 25px;
+    }
+    .search-h2 {
+        font-size: 12px;
+    }
+    .search-input {
+        height: 30px;
+        width: 200px;
+        border-radius: 5px 0 0 5px;
+        font-size: 10px;
+    }
+    .search-btn {
+        border-radius: 0 5px 5px 0;
+        height: 30px;
+        font-size: 10px;
         width: 100px;
     }
 }
