@@ -37,9 +37,9 @@ function Hero() {
             </div>
 
             <div className="right-landing">
-                    <div className="flex-workers">
-                      <img src={Polidos} alt="" />
-                    </div>
+                 <div className="flex-workers">
+                    <img src={Polidos} alt="" />
+                  </div>
             </div>
 
         </div>

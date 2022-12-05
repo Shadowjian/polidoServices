@@ -1025,3 +1025,432 @@
         width: 100px;
     }
 }
+
+
+/* =================================================
+
+FAQ */
+
+/* FAQ BANNER */
+
+.faq-container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.faq-banner {
+    background-image: url(../../assets/faqbanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    
+}
+
+.faq-box {
+    height: 300px;
+    width: 70%;
+    padding: 20px;
+    background-color: gray;
+    opacity: 0.9;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-border {
+    border: solid 10px #ff9900;
+    height: 150px;
+    min-width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.faq-title {
+    color: #ff9900;
+    font-size: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* FAQ BANNER END */
+
+.faqcontent-container {
+    min-height: 80vh;
+    width: 100%;
+    background-image: url(../../assets/imageOne.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 100px;
+}
+
+.content-box {
+    min-height: auto;
+    min-width: 100%;
+    background-color: gray;
+    border-radius: 20px;
+    align-items: flex-start;
+    padding: 20px 40px;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq1-box {
+    
+}
+
+.faq1 {
+    font-size: 30px;
+    color: #ff9900;
+    padding-left: 50px;
+}
+
+.faq1-box p {
+    font-size: 15px;
+    color: #f3f2f0;
+    padding-left: 70px;
+}
+
+@media only screen and (max-width: 420px) {
+    .faq-box {
+        height: 200px;
+        width: 80%;
+        padding: 15px;
+    }
+    .faq-border {
+        border: solid 7px #ff9900;
+        height: 150px;
+        padding: 10px;
+    }
+    .faq-title {
+        font-size: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .faq-box {
+        height: 200px;
+        width: 80%;
+        padding: 15px;
+    }
+    .faq-border {
+        border: solid 7px #ff9900;
+        height: 150px;
+        padding: 10px;
+    }
+    .faq-title {
+        font-size: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* FAQ END HERE*/
+
+/* =================================================
+
+PRIVACY POLICY*/
+
+/* PRIVACY POLICY BANNER */
+   
+.privacy-container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.privacy-banner {
+    background-image: url(../../assets/faqbanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+}
+
+.privacy-box {
+    height: 300px;
+    width: 70%;
+    padding: 20px;
+    background-color: gray;
+    opacity: 0.9;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.privacy-border {
+    border: solid 10px #ff9900;
+    height: 150px;
+    min-width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.privacy-title {
+    color: #ff9900;
+    font-size: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* PRIVACY POLICY BANNER END */
+
+.privacycontent-container {
+    min-height: 80vh;
+    width: 100%;
+    background-image: url(../../assets/imageOne.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 100px;
+}
+
+.privacycontent-box {
+    min-height: auto;
+    min-width: 100%;
+    background-color: gray;
+    border-radius: 20px;
+    align-items: flex-start;
+    padding: 20px 40px;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+}
+
+.privacy1-box {
+    
+}
+
+.privacy1 {
+    font-size: 35px;
+    color: #ff9900;
+    padding-left: 50px;
+}
+
+.privacy1-num {
+    font-size: 20px;
+    color: #ff9900;
+    padding-left: 50px; 
+}
+
+.privacy1-box p {
+    font-size: 15px;
+    color: #f3f2f0;
+    padding-left: 70px;
+}
+
+.email {
+    color: #ff9900;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 420px) {
+    .privacy-box {
+        height: 200px;
+        width: 80%;
+        padding: 15px;
+    }
+    .privacy-border {
+        border: solid 7px #ff9900;
+        height: 150px;
+        padding: 10px;
+    }
+    .privacy-title {
+        font-size: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .privacy-box {
+        height: 200px;
+        width: 80%;
+        padding: 15px;
+    }
+    .privacy-border {
+        border: solid 7px #ff9900;
+        height: 150px;
+        padding: 10px;
+    }
+    .privacy-title {
+        font-size: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* PRIVACY POLICY END HERE */
+
+/* =================================================
+
+TERMS AND CONDITIONS*/
+
+.terms-container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.terms-banner {
+    background-image: url(../../assets/faqbanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+}
+
+.terms-box {
+    height: 300px;
+    width: 70%;
+    padding: 20px;
+    background-color: gray;
+    opacity: 0.9;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.terms-border {
+    border: solid 10px #ff9900;
+    height: 150px;
+    min-width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.terms-title {
+    color: #ff9900;
+    font-size: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*TERMS AND CONDITIONS BANNER END */
+
+.termscontent-container {
+    min-height: 80vh;
+    width: 100%;
+    background-image: url(../../assets/imageOne.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 100px;
+}
+
+.termscontent-box {
+    min-height: auto;
+    min-width: 100%;
+    background-color: gray;
+    border-radius: 20px;
+    align-items: flex-start;
+    padding: 20px 40px;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+}
+
+.terms1-box {
+    
+}
+
+.terms1 {
+    font-size: 35px;
+    color: #ff9900;
+    padding-left: 50px;
+}
+
+.terms1-num {
+    font-size: 20px;
+    color: #ff9900;
+    padding-left: 50px; 
+}
+
+.terms1-box p {
+    font-size: 15px;
+    color: #f3f2f0;
+    padding-left: 70px;
+}
+
+
+@media only screen and (max-width: 420px) {
+    .terms-box {
+        height: 200px;
+        width: 80%;
+        padding: 15px;
+    }
+    .terms-border {
+        border: solid 7px #ff9900;
+        height: 150px;
+        padding: 10px;
+    }
+    .terms-title {
+        font-size: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .terms-box {
+        height: 200px;
+        width: 80%;
+        padding: 15px;
+    }
+    .terms-border {
+        border: solid 7px #ff9900;
+        height: 150px;
+        padding: 10px;
+    }
+    .terms-title {
+        font-size: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* TERMS AND CONDITION END HERE*/
