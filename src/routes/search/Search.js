@@ -16,16 +16,17 @@ function Search() {
   // const [loggedIn, setLoggedIn] = useState(false)
 
   useEffect(()=>{
-    setSellers(Sellers)
+    !searchInput && setSellers(Sellers)
     console.log('render')
-  },[])
+  },[searchInput])
 
   // console.log(searchInput)
 
   const searchSellers =(e)=> {
       setSearchInput(e.target.value)
       setSellers(Sellers.filter((seller)=>{
-        return seller.skills.includes(searchInput.toLowerCase())
+        // chaining some and includes method to filter array
+        return seller.skills.some((element)=>element.includes(searchInput.toLowerCase()))
       }))
   }
 

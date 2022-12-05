@@ -2,10 +2,10 @@
 
 import React from 'react'
 
-const RegistrationForm = () => {
+const SignUpForm = () => {
   return (
     <div>RegistrationForm</div>
   )
 }
 
-export default RegistrationForm
+export default SignUpForm

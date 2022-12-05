@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import React from 'react'
 
-
 //TODO create a new object for the seller's profile:
 
 // 1. banner
@@ -25,10 +24,10 @@ const SellerSection = styled('section')`
     width: 80vw;
     max-width: 600px;
     height: 100vh;
-    background-color: var(--profile-color1);
+    background-color: var(--bg-primary);
     z-index: 9999;
-    
 `
+
 const BannerDiv = styled.div `
   position: relative;
   height: 200px;
@@ -38,7 +37,16 @@ const BannerDiv = styled.div `
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+
+  /* padding: 20px; */
+  .banner {
+    overflow: hidden;
+    width: 100%;
+  }
+  .banner img {
+    width: 100%;
+    filter: blur(2px);
+  }
   .close-btn {
     width: fit-content;
     color: var(--color-text4);
@@ -47,7 +55,9 @@ const BannerDiv = styled.div `
     position: absolute;
     top: 20px;
     left: 20px;
-    box-shadow: 1px 1px 2px;
+    background-color: rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 2px var(--color-text5);
+    z-index: 1000;
   }
   .close-btn:hover{
     border: solid white 1px;
@@ -58,17 +68,24 @@ const BannerDiv = styled.div `
 
   }
   h4{
+    position: absolute;
+    /* width: 80%; */
     text-align: center;
-    color: var(--color-text5);
+    color: var(--color-text4);
+    padding: 10px;
     font-style: italic;
+    background-color: rgba(0, 0, 100, 0.4);
   }
   .profile-pic {
       position: absolute;
-      background-color: purple;
-      bottom: -20px;
-      width: 5rem;
-      height: 5rem;
-      border: 5px solid var(--profile-color1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--bg-primary);
+      bottom: -30px;
+      width: 6rem;
+      height: 6rem;
+      border: 5px solid var(--bg-primary);
       border-radius: 50%;
       overflow: hidden;
       img {
@@ -107,34 +124,35 @@ const ReviewsDiv = styled.div`
   header {
     margin: 40px 0px;
     color: var(--color-text2);
-    font-size: large;
+    font-size: x-large;
   }
 `
-
 const CxReview = styled.div`
 display: flex;
+flex-direction: column;
 /* background-color: blue; */
 justify-content: space-between;
 align-items: center;
-gap: 20px;
+gap: 10px;
 width: 90%;
 margin-bottom: 30px;
   .cx-photo {
     border-radius: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    /* align-items: center; */
     /* border: 1px solid purple; */
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     overflow: hidden;
-    box-shadow: 0px 1px 2px var(--color-text1);
+    box-shadow: 0px 1px 2px var(--color-text4);
   }
   .cx-photo img {
-    width: 100%;
+    width: 110%;
   }
   p {
-    font-size: small;
+    font-size: smaller;
     font-style: italic;
     color: var(--color-text3)
   }
@@ -142,21 +160,21 @@ margin-bottom: 30px;
     font-size: x-large;
     font-weight: 600;
     color: var(--color-text2);
-
   }
 `
 
 const BookMe = styled.div`
   position: absolute;
   align-self: center;
-  bottom: 20px;
+  bottom: 40px;
   width: 50%;
   div {
     text-align: center;
     width: 100%;
     padding: 10px;
-    color: var(--color-text2);
-    /* border: 1px solid purple; */
+    color: var(--color-text4);
+    font-size: larger;
+    border: 1px solid var(--color-text2);
   }
   div:hover {
     background-color: var(--bg-hover);
@@ -167,11 +185,10 @@ const BookMe = styled.div`
   
 `
 
-function RightSection({hideSeller, sellerData, login}) {
+function RightSection({hideSeller, sellerData}) {
 
   const bookMe = () => {
-    alert(login)
-    console.log(login)
+    alert('fix this')
   }
 
   console.log(sellerData)
@@ -181,37 +198,36 @@ function RightSection({hideSeller, sellerData, login}) {
         <div className='close-btn' onClick={hideSeller}>
           X
         </div>
+        <div className='banner'><img src={sellerData.banner} alt="" /></div>
         <h4>"{sellerData.phrase}"</h4>
         <div className='profile-pic'>
           <img src={sellerData.photo} alt="" />
         </div>
       </BannerDiv>
       <ProfileDiv>
-          <div className='name'>Hi, I'm <span>{sellerData.name}</span></div>
+          <div className='name'>Hi, I'm <span>{sellerData.name}</span> and I'm a <span className='expertise'>{sellerData.skills[0]}</span></div>
           {/* <div className='rating'>
             <span>Rating {sellerData.rating} <i className='fa-solid fa-star'></i></span>
           </div> */}
       </ProfileDiv>    
       <ReviewsDiv>
         <header>My customer reviews...</header>
+          
           <CxReview>
-            <div className='cx-photo'>
-              <img src={sellerData.photo} alt="" />
-            </div>
-            <p><span>"</span> {sellerData.phrase} <span>"</span></p>
+            
+            {sellerData.cxReviews.map((review)=>{
+              console.log(review)
+            return (
+              <>
+              <div className='cx-photo'>
+                <img src={review.cxPhoto} alt="" />
+              </div>
+              <p><span>"</span>{review.review}<span>"</span></p>
+            </> 
+              )
+            })}
           </CxReview>
-          <CxReview>
-            <div className='cx-photo'>
-              <img src={sellerData.photo} alt="" />
-            </div>
-            <p><span>"</span> {sellerData.phrase} <span>"</span></p>
-          </CxReview>
-          <CxReview>
-            <div className='cx-photo'>
-              <img src={sellerData.photo} alt="" />
-            </div>
-            <p><span>"</span> {sellerData.phrase} <span>"</span></p>
-          </CxReview>
+     
       </ReviewsDiv>
       <BookMe>
         <div onClick={bookMe}>Book Me</div>
