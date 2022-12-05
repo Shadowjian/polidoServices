@@ -4,6 +4,9 @@ function SearchSection({searchFn, searchInput}) {
         
     return (
         <div className="search-page-container">
+            <div className='search-glass'>
+              <i className="fa-solid fa-magnifying-glass"></i>
+            </div>
             {/* SEARCH INPUT */}
             <input 
                 value={searchInput}

@@ -3,11 +3,14 @@
 :root {
     /* --bg-color: linear-gradient(-90deg, #281c47, #876cca); */
     /* --bg-color: #494970; */
-    --bg-color: #646493;
+    /* --bg-color: #646493; */
+    --bg-color: #494970;
     /* --bg-color4: linear-gradient(272.51deg, #2E2D51 63.71%, rgb(121, 120, 212) 85.16%, rgba(141, 141, 141) 115.31%); */
     --bg-primary: #494970;
     --bg-hover: #62628f;
     --bg-color7: #494970;
+    --bg-fb: #4267B2;
+    --bg-google: #DB4437;
 
     --bg-color2: white;
     --bg-color3: rgb(168, 166, 166);
@@ -32,11 +35,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
+    /* transition: all 0.1s ease-out; */
+    /* border: 1px solid green; */
+    /* overflow-x: hidden; */
 }
 
 body {
     font-family: 'Roboto Flex', sans-serif;
     background: url(./assets/imageOne.png);
+    overflow-x: hidden;
 
 }
 
@@ -46,7 +54,7 @@ body {
     top: 0;
     width: 100%;
     justify-content: center;
-    padding: 5px;
+    padding: 10px;
     /* background-color: rgba(62, 48, 69, 0.8); */
     background: var(--bg-primary);
     /* background: linear-gradient(272.51deg, #2E2D51 63.71%, rgb(121, 120, 212) 85.16%, rgba(141, 141, 141) 115.31%); */
@@ -246,8 +254,19 @@ body {
 }
 .btnl:hover {
     cursor: pointer;
-    background-color: var(--bg-hover);
     color: white;
+    background-color: var(--bg-hover);
+}
+
+.btn-fb:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--bg-fb);
+}
+.btn-google:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--bg-google);
 }
 
 .join-modal .input {

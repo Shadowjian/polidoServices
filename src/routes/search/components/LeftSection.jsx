@@ -3,9 +3,7 @@ import React from 'react'
 const php = "\u20B1"
 
 function SearchCard ({showSeller, seller, index}) {
-
-
-    return (
+  return (
     <div className='search-card'>
         <div className='card-layer' onClick={showSeller} id={index}></div>
             <div className='card-banner'>
@@ -18,8 +16,9 @@ function SearchCard ({showSeller, seller, index}) {
                 </div>
                 <div className='seller-info'>
                   <div className='seller-name'>{seller.name}</div>
-                  <div className='seller-level'>Level {seller.level}</div>
+                  <div className='seller-level'>Level {seller.level} <span className='expertise'>{seller.skills[0]}</span></div>
                 </div>
+            
               </div>
               <div className='seller-phrase'>
                 "{seller.phrase}"
@@ -32,8 +31,8 @@ function SearchCard ({showSeller, seller, index}) {
               </div>
           </div>
       </div>
-    )
-  }
+  )
+}
 
   
   function LeftSection({sellers, showSeller, searchInput }) {
@@ -44,7 +43,7 @@ function SearchCard ({showSeller, seller, index}) {
           {searchInput &&
             <>
               {sellers.length > 0 ? 
-              <p style={{marginBottom:"20px"}}>Results for "{searchInput.toUpperCase()}": There are {sellers.length} available services.</p> : <p style={{marginBottom: '20px'}}>We don't have "{searchInput.toUpperCase()}" service yet.</p>
+              <p className="search-result-text" style={{marginBottom:"20px"}}>Results for "{searchInput.toUpperCase()}": There are {sellers.length} available services.</p> : <p className="search-result-text" style={{marginBottom: '20px'}}>We don't have "{searchInput.toUpperCase()}" service available at the moment.</p>
               }
             </>
           }

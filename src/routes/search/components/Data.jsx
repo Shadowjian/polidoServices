@@ -1,14 +1,28 @@
 
-export const sellerNameList = ['Stark','Banner', 'Rogers', 'Barton', 'Parker', 'Happy', 'Quil', 'Noob69', "T'Challa", "Strange", "Lang", "Vision", "Sins"]
+export const sellerNameList = ['Stark','Banner', 'Rogers', 'Barton', 'Parker', 'Happy', 'Quil', 'Noob69', "T'Challa", "Strange", "Lang", "Vision", "Sins", "Poldz", "Hajji", "Joseph", "Felix", "Zen", "Nicky"]
 export const sellerSkillList = [
-    "carpentry, carpenter, cabinet",
-    "driver, driving, sweetlover, car wash",
-    "gardening, gardenir",
-    "pet, petmalu, petmaster, nannypet",
-    "massage, massager, chiropractor",
-    "plumber, plumbing, pipe leak",
-    "housekeeper, house cleaner, cleaning house",
-    "tutor, nanny",
+    ["carpenter", "carpentry", "cabinet", "furniture"],
+    ["driver", "sweetlover", "navigator", "travelling"],
+    ["gardener", "plant expert", "landscaping", "flower expert"],
+    ["pet Expert", "dog", "cat", "animal trainer"],
+    ["massage Expert", "massage", "extra service", "masseur"],
+    ["baby Sitter", "nanny", "child care"],
+    ["nursery Tutor", "mentor", "coach", "teacher"],
+    ["house Keeper", "house cleaning", "cleaning"],
+    ["plumber", "pipe fixing", "pipe leaking"],
+    ["tile Expert", "tiles"],
+    ["escort", "happy", "lonely", "date"],
+    ["house Repair Expert", "roof leak", "damaged wall", "door fixing"],
+    
+    
+    // "carpenter, carpentry, cabinet",
+    // "driver, driving, sweetlover, car wash",
+    // "gardener, gardening",
+    // "pet expert, pet, petmalu, petmaster, nannypet",
+    // "massage expert, massager, massage, chiropractor",
+    // "plumber, plumbing, pipe leak",
+    // "housekeeper, house cleaner, cleaning house",
+    // "tutor, nanny",
 ]
 export const sellerPhraseList = [
     'Patience is something you admire in the driver behind you and scorn in the one ahead.',

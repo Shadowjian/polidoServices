@@ -1,23 +1,24 @@
 
 .page-container{
-    /* background: url(../../assets/imageOne.png); */
-    margin: auto;
-    margin-top: 50px;
-    width: 100vw;
+    background: url(../../assets/imageOne.png);
     display: flex;
+    margin: auto;
+    margin-top: 60px;
+    width: 100vw;
     justify-content: center;
     gap: 10px;
-    overflow: hidden;
 }
-
-
 
 .left {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    margin: 20px auto;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+}
+
+.expertise {
+    text-transform: capitalize;
 }
 
 .overlay{
@@ -37,19 +38,48 @@
 .search-page-container {
     display: flex;
     width: 80vw;
-    padding: 10px;
+    max-width: 600px;
+    /* margin: 20px 0px; */
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 2px var(--color-text1);
 }
+
+.search-glass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--color-text5);
+}
+.fa-magnifying-glass {
+    font-size: large;
+    color: var(--link-color);
+}
+
 .search-page-input {
     padding: 10px;
     width: 100%;
+    color: var(--color-text1);
+    background-color: var(--color-text5);
+    outline: none;
+    font-size: 1.2rem;
+    /* padding: 5px; */
+    border: none;
+}
+
+.search-page-container:hover {
+    box-shadow: 0px 0px 4px var(--color-text1);
 }
 
 .search-result {
     display: flex;
+    /* margin-bottom: 50px; */
     flex-direction: column;
-    padding: 10px;
+    /* padding: 10px; */
     width: 90vw;
-    padding: 10px;
+    height: 80vh;
+    /* padding: 10px; */
 }
 
 .search-result-cards {
@@ -59,8 +89,13 @@
     overflow: auto;
     justify-content: center;
     width: 100%;
+
     /* height: 70vh; */
-    
+}
+
+.search-result-text {
+    text-align: center;
+    color: var(--color-text1)
 }
 
 /* SEARCH-CARD COMPONENT */
@@ -70,7 +105,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0, 0);
+    background-color: rgba(0,0,0,0);
     z-index: 1;
 }
 
@@ -79,6 +114,8 @@
     display: flex;
     flex-direction: column;
     max-width: 300px;
+    overflow: hidden;
+    border-radius: 5px;
     /* max-height: 300px; */
     box-shadow: 1px 1px 1px;
 }
@@ -108,7 +145,7 @@
 
 .search-card:hover {
     background: var(--bg-primary);
-    color: var(--color-text5);
+    color: var(--color-text4);
     cursor: pointer;
 }
 
@@ -155,7 +192,8 @@
     font-size: small;
 }
 .service-rate {
-    color: rgb(243, 202, 243);
+    /* color: rgb(243, 202, 243); */
+    color: var(--link-color);
 }
 
 @media (max-width: 500px) {

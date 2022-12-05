@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import React from 'react'
 
-
 //TODO create a new object for the seller's profile:
 
 // 1. banner
@@ -27,8 +26,8 @@ const SellerSection = styled('section')`
     height: 100vh;
     background-color: var(--bg-primary);
     z-index: 9999;
-    
 `
+
 const BannerDiv = styled.div `
   position: relative;
   height: 200px;
@@ -38,6 +37,7 @@ const BannerDiv = styled.div `
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   /* padding: 20px; */
   .banner {
     overflow: hidden;
@@ -45,6 +45,7 @@ const BannerDiv = styled.div `
   }
   .banner img {
     width: 100%;
+    filter: blur(2px);
   }
   .close-btn {
     width: fit-content;
@@ -54,7 +55,9 @@ const BannerDiv = styled.div `
     position: absolute;
     top: 20px;
     left: 20px;
-    box-shadow: 1px 1px 2px;
+    background-color: rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 2px var(--color-text5);
+    z-index: 1000;
   }
   .close-btn:hover{
     border: solid white 1px;
@@ -66,17 +69,19 @@ const BannerDiv = styled.div `
   }
   h4{
     position: absolute;
-    width: 80%;
+    /* width: 80%; */
     text-align: center;
     color: var(--color-text4);
+    padding: 10px;
     font-style: italic;
+    background-color: rgba(0, 0, 100, 0.4);
   }
   .profile-pic {
       position: absolute;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: purple;
+      background-color: var(--bg-primary);
       bottom: -30px;
       width: 6rem;
       height: 6rem;
@@ -122,7 +127,6 @@ const ReviewsDiv = styled.div`
     font-size: x-large;
   }
 `
-
 const CxReview = styled.div`
 display: flex;
 flex-direction: column;
@@ -162,7 +166,7 @@ margin-bottom: 30px;
 const BookMe = styled.div`
   position: absolute;
   align-self: center;
-  bottom: 20px;
+  bottom: 40px;
   width: 50%;
   div {
     text-align: center;
@@ -201,7 +205,7 @@ function RightSection({hideSeller, sellerData}) {
         </div>
       </BannerDiv>
       <ProfileDiv>
-          <div className='name'>Hi, I'm <span>{sellerData.name}</span></div>
+          <div className='name'>Hi, I'm <span>{sellerData.name}</span> and I'm a <span className='expertise'>{sellerData.skills[0]}</span></div>
           {/* <div className='rating'>
             <span>Rating {sellerData.rating} <i className='fa-solid fa-star'></i></span>
           </div> */}
