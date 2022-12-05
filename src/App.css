@@ -297,7 +297,6 @@ body {
 }
 .ismember:hover {
     cursor: pointer;
-
     color: var(--link-color);
 }
 
@@ -321,4 +320,5 @@ body {
     }
 
 }
+
 

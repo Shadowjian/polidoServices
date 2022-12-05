@@ -1,0 +1,65 @@
+#phrase{
+    /* background-color: blueviolet; */
+    margin-top: 30px;
+   
+    background-color: #2f2e51;
+    justify-content: center;
+    
+    color: rgb(233, 233, 233);
+    border-radius: 5px;
+    width: 1055px;  
+    display: flex;
+    padding: 20px;
+    font-size: 20px;
+    
+    
+}
+
+#headTitle{
+    color: rgb(17, 16, 12);
+   
+}
+
+#page{
+    margin-right : 30px;
+}
+ 
+
+#containerOne{
+     
+    font-weight: lighter;
+    font-size: 30px;
+    color: #ff9900;
+    
+      
+}
+
+#containerTwo{
+    margin-top: 20px;
+    display: flex;
+    margin-right: 20px;
+   
+}
+
+#officeLogo{
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgb(231, 189, 0) ;
+}
+
+#parContOne{
+    /* background-color: aqua; */
+     
+    display: flex;
+    justify-content: center;
+}
+#headTitle{
+    text-align: center;
+    /* background-color: rgb(0, 0, 0); */
+    margin-top: 100px;
+    font-size: 30px;
+    
+}
+
+
+ 
