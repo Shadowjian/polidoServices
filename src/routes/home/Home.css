@@ -40,7 +40,7 @@
 }
 
 .hire-btn {
-    background: var(--bg-color3);
+    background: var(--bg-color);
     border: none;
     border-radius: 10px;
     height: 40px;
@@ -52,7 +52,7 @@
 
 .hire-btn:hover {
     cursor: pointer;
-    box-shadow: 0 2px 50px 0 #876cca;
+    box-shadow: 0 2px 20px 0 #876cca;
     transition: 1s;
 }
 
@@ -60,6 +60,7 @@
     font-size: 15px;
     text-decoration: none;
     font-weight: 700;
+    color: var(--link-color);
 }
 
 .newsletter {
@@ -92,12 +93,12 @@
 }
 
 .subs-btn {
-    background: var(--bg-color3);
+    background: var(--bg-color);
     border: none;
     border-radius: 0 10px 10px 0;
     height: 45px;
     font-size: 15px;
-    color: black;
+    color: white;
     font-weight: 700;
     margin: 8px 0;
     padding: 0px;
@@ -107,7 +108,7 @@
 
 .subs-btn:hover {
     cursor: pointer;
-    box-shadow: 0 2px 50px 0 #876cca;
+    box-shadow: 0 2px 20px 0 #876cca;
     transition: 1s;
 }
 
@@ -181,7 +182,7 @@
 }
 
 .card { 
-    background: var(--card-color);
+    background: var(--color-text3);
     height: auto;
     width: 300px;
     border-radius: 10px;
@@ -194,7 +195,7 @@
 }
 
 .card-body {
-    height: 220px;
+    height: 200px;
     border-radius: 0 0 10px 10px;
 }
 
@@ -203,16 +204,18 @@
     height: 200px;
     width: 100%;
     align-self: center;
+    margin-bottom: 20px;
 }
 
 .card-title {
     font-size: 20px;
-    padding-bottom: 2px;
+    margin-bottom: 20px;
 }
 
 .card-text {
     font-size: 15px;
     text-align: center;
+    line-height: 20px;
 }
 
 .card:hover {
@@ -220,7 +223,7 @@
     z-index: 1;
 }
 
-.btn {
+/* .btn {
     padding: 10px;
     background: var(--bg-color3);
     color: black;
@@ -234,7 +237,7 @@
     cursor: pointer;
     box-shadow: 0 2px 50px 0 #876cca;
     transition: 1s;
-}
+} */
 
 /* Services END*/
 
@@ -470,7 +473,7 @@
     border: none;
     border-radius: 0 15px 15px 0;
     height: 50px;
-    font-size: 20px;
+    font-size: 25px;
     color: #FFFFFF;
     margin: 8px 0;
     width: 200px;
@@ -479,7 +482,7 @@
 
 .search-btn:hover {
     cursor: pointer;
-    box-shadow: 0 2px 50px 0 #876cca;
+    box-shadow: 0 2px 20px 0 #876cca;
     transition: 1s;
 }
 
@@ -1050,7 +1053,7 @@ FAQ */
     align-items: center;
     width: 100%;
     height: 40vh;
-    
+    margin-top: 50px;
 }
 
 .faq-box {
@@ -1188,6 +1191,7 @@ PRIVACY POLICY*/
     align-items: center;
     width: 100%;
     height: 40vh;
+    margin-top: 50px;
 }
 
 .privacy-box {
@@ -1334,6 +1338,7 @@ TERMS AND CONDITIONS*/
     align-items: center;
     width: 100%;
     height: 40vh;
+    margin-top: 50px;
 }
 
 .terms-box {

@@ -24,9 +24,9 @@ function Services() {
                     <div className="card-body">
                       <h5 className="card-title">Laundry Services</h5>
                       <p className="card-text">Our full laundry services are offered by Retail professional garment care, Garment repair services and Cleaning services companies that caters to individual and institutions.</p>
-                      <a href='#'>
+                      {/* <a href='#'>
                       <button className="btn">View Details</button>
-                      </a>
+                      </a> */}
                     </div>
                 </div>
 
@@ -35,9 +35,9 @@ function Services() {
                     <div className="card-body">
                       <h5 className="card-title">Home Maintainance</h5>
                       <p className="card-text">We’ll help you find House & Home professionals. Tell us your requirements and we’ll refine and contact service providers in your area to help you.</p>
-                      <a href='#'>
+                      {/* <a href='#'>
                       <button className="btn">View Details</button>
-                      </a>
+                      </a> */}
                     </div>
                 </div>
 
@@ -46,9 +46,9 @@ function Services() {
                     <div className="card-body">
                       <h5 className="card-title">Repair Services</h5>
                       <p className="card-text">Our experienced, professional repair and improvement technicians are highly skilled craftsmen with wide variety of repair and installation services</p>
-                      <a href='#'>
+                      {/* <a href='#'>
                       <button className="btn">View Details</button>
-                      </a>
+                      </a> */}
                     </div>
                 </div>
 
@@ -57,9 +57,9 @@ function Services() {
                     <div className="card-body">
                       <h5 className="card-title">Transport Services</h5>
                       <p className="card-text">Our professionals are highly screened, trained, and qualified drivers of commercial vehicles for affordable and trustworthy service according to our high-quality standards</p>
-                      <a href='#'>
+                      {/* <a href='#'>
                       <button className="btn">View Details</button>
-                      </a>
+                      </a> */}
                     </div>
                 </div>
 
