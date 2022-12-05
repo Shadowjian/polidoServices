@@ -1,51 +1,24 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+ 
 
-/* #aboutBody{
-    background-image: url(../../assets/imageOne.png);
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    
-} */
 
-#aboutBody{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-     
-}
 
-#contentContainer{
-    margin: 50px;
-}
-
-#about{
-
-    margin: 10px;
-    margin-bottom: 50px;
-}
 
 li{
     list-style: none;
 }
 
-h2{
-    margin-bottom: 5px;
+#h2Cards{
+    text-align: left;
+   margin-bottom: 5px;
    margin-top: 20px ;
    color: rgb(61, 61, 99);
    /* color: rgb(243, 141, 8); */
    
    
 }
-h1{
-    color: rgb(61, 61, 99);
-    
-    
-}
-
+ 
+ 
+ 
  
 
 

@@ -27,6 +27,7 @@
 
 body {
     font-family: 'Roboto Flex', sans-serif;
+    background-image: url(./assets/imageOne.png);
 }
 
 #navbar-wrapper {
@@ -268,7 +269,6 @@ body {
 }
 .ismember:hover {
     cursor: pointer;
-
     color: var(--link-color);
 }
 
@@ -292,4 +292,5 @@ body {
     }
 
 }
+
 
