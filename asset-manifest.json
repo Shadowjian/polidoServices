@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/polidoServices/static/css/main.3b2836cd.css",
-    "main.js": "/polidoServices/static/js/main.bee8a014.js",
+    "main.js": "/polidoServices/static/js/main.c9cff12c.js",
     "static/media/laundry.jpg": "/polidoServices/static/media/laundry.9a9d518e8815ce90813d.jpg",
     "static/media/faqbanner.jpg": "/polidoServices/static/media/faqbanner.214d04d83866660466a7.jpg",
     "static/media/home.jpg": "/polidoServices/static/media/home.c2b65ccf09723b7e9d95.jpg",
@@ -23,10 +23,10 @@
     "static/media/profilePic.svg": "/polidoServices/static/media/profilePic.8b30839338625210f0d3d1dbd2ec8278.svg",
     "index.html": "/polidoServices/index.html",
     "main.3b2836cd.css.map": "/polidoServices/static/css/main.3b2836cd.css.map",
-    "main.bee8a014.js.map": "/polidoServices/static/js/main.bee8a014.js.map"
+    "main.c9cff12c.js.map": "/polidoServices/static/js/main.c9cff12c.js.map"
   },
   "entrypoints": [
     "static/css/main.3b2836cd.css",
-    "static/js/main.bee8a014.js"
+    "static/js/main.c9cff12c.js"
   ]
 }
