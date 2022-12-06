@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/polidoServices/static/css/main.215007b0.css",
-    "main.js": "/polidoServices/static/js/main.b834b5c9.js",
+    "main.css": "/polidoServices/static/css/main.7e0bd721.css",
+    "main.js": "/polidoServices/static/js/main.9f58cfed.js",
     "static/media/laundry.jpg": "/polidoServices/static/media/laundry.9a9d518e8815ce90813d.jpg",
     "static/media/faqbanner.jpg": "/polidoServices/static/media/faqbanner.214d04d83866660466a7.jpg",
     "static/media/home.jpg": "/polidoServices/static/media/home.c2b65ccf09723b7e9d95.jpg",
@@ -22,11 +22,11 @@
     "static/media/logo.png": "/polidoServices/static/media/logo.75cc54661e9d31595aab.png",
     "static/media/profilePic.svg": "/polidoServices/static/media/profilePic.8b30839338625210f0d3d1dbd2ec8278.svg",
     "index.html": "/polidoServices/index.html",
-    "main.215007b0.css.map": "/polidoServices/static/css/main.215007b0.css.map",
-    "main.b834b5c9.js.map": "/polidoServices/static/js/main.b834b5c9.js.map"
+    "main.7e0bd721.css.map": "/polidoServices/static/css/main.7e0bd721.css.map",
+    "main.9f58cfed.js.map": "/polidoServices/static/js/main.9f58cfed.js.map"
   },
   "entrypoints": [
-    "static/css/main.215007b0.css",
-    "static/js/main.b834b5c9.js"
+    "static/css/main.7e0bd721.css",
+    "static/js/main.9f58cfed.js"
   ]
 }
