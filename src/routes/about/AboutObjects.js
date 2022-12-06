@@ -11,12 +11,12 @@ const foundersObject = [
   
   {
     headTwo: 'Who We Are',
-    pageOne: "Polido services are   the first  services marketplace in the Philippines. We are driving a shift towards a demand-based, digital economy for service businesses. We are passionate about helping people to empower them to live their work by building their businesses from  the ground up and becoming financially and professionally independent. We're a team of energetic, passionate, and dedicated individuals. As the First growing services marketplace, we have vast ambitions as we continue to expand across the country.",
+    pageOne: "Polido services are  the first  services marketplace in the Philippines. We are driving a shift towards a demand-based, digital economy for service businesses. We are passionate about helping people to empower them to live their work by building their businesses from  the ground up and becoming financially and professionally independent. We're a team of energetic, passionate, and dedicated individuals. As the First growing services marketplace, we have vast ambitions as we continue to expand across the country.",
     image: polidoOffice,
   },
   {
     headTwo: 'Our goal in the community',
-    pageOne:  "We are passionate about what we do, our team is proud to support thousands of Filipinos to get started off the ground. One of our goals is to connect clients to our community of professional individualsÂ available to hire by the hour or project; provide flexibility to work when it suits you, outside the archaic 9-to-5 day; and enable people to live their work dream.",
+    pageOne:  "We are passionate about what we do, our team is proud to support thousands of Filipinos to get started off the ground. One of our goals is to connect clients to our community of professional individuals available to hire by the hour or project; provide flexibility to work when it suits you, outside the archaic 9-to-5 day; and enable people to live their work dream.",
     image: polidoGoal,
   },
   {
