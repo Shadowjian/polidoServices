@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { Link } from 'react-router-dom'
+import logo from '../assets/logo.png'
+
 
 const FooterWrapper = styled.div`
   	background: var(--bg-color);
@@ -23,6 +26,11 @@ ul{
 .footer-col{
    width: 25%;
    padding: 0 15px;
+}
+
+.foot-logo {
+	width: 3.5rem;
+	margin-top: .8rem;
 }
 
 .footer-col h4{
@@ -58,6 +66,11 @@ ul{
 	color: #bbbbbb;
 	display: block;
 	transition: all 0.3s ease;
+}
+
+.footer-col ul li:hover{
+	color: var(--link-color);
+	padding-left: 8px;
 }
 
 .footer-col ul li a:hover{
@@ -117,37 +130,38 @@ function Footer() {
   	 			<h4>POLIDO SERVICES</h4>
   	 			<ul>
                     <h5 className="polido-info">Your PROBLEM We SOLVE</h5>
+					<li><Link to="/"><img className='foot-logo' src={logo} alt="" /></Link></li>
                     <h5 className="polido-info">Copyright © 2022 Polido Services</h5>
   	 			</ul>
   	 		</div>
   	 		<div className="footer-col">
   	 			<h4>ABOUT US</h4>
   	 			<ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Our services</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Join us now</a></li>
+                    <li><a>About us</a></li>
+                    <li><a>Our services</a></li>
+                    <li><a>Testimonials</a></li>
+                    <li><a>Join us now</a></li>
   	 			</ul>
   	 		</div>
   	 		<div className="footer-col">
   	 			<h4>GET HELP</h4>
   	 			<ul>
-                    <li><a href="#">How It Works</a></li>
-                    <li><a href="#">Frequently Asked Questions</a></li>
-                    <li><a href="#">Privacy policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
+					<li><a>How It Works</a></li>
+                    <li><Link to='faqs'>Frequently Asked Questions</Link></li>
+                    <li><Link to='privacy'>Privacy policy</Link></li>
+                    <li><Link to='terms'>Terms & Conditions</Link></li>
   	 			</ul>
   	 		</div>
   	 		<div className="footer-col">
   	 			<h4>CONTACT US</h4>
   	 			<div className="social-links">
-  	 				<a href="#"><i className="fab fa-facebook-f"></i></a>
+				   <a href="#"><i className="fab fa-facebook-f"></i></a>
   	 				<a href="#"><i className="fab fa-twitter"></i></a>
   	 				<a href="#"><i className="fab fa-instagram"></i></a>
   	 				<a href="#"><i className="fab fa-linkedin-in"></i></a>
                     
                     <h3 className="polido-info">support@polidoservices.com</h3>
-                    <h3 className="polido-info">+63 (945) 773 0024</h3>
+                    <h3 className="polido-info">63 (945) 773 0024</h3>
                     
   	 			</div>
   	 		</div>

@@ -19,7 +19,7 @@ function Hero() {
                     <h1 className="slogan-title">Your <span>PROBLEM</span>... We <span>SOLVE</span></h1>
                     <h3>Broken pipes? Roof leaking? Need Driver?</h3>
                     <button className="hire-btn">
-                      <Link className='hirebtn-txt' to="search" style={{color: 'black'}}>HIRE A PROFESSIONAL</Link>
+                      <Link className='hirebtn-txt' to="search">Hire a Professional</Link>
                     </button>
               </div>
 
@@ -28,8 +28,8 @@ function Hero() {
 
                     <div className="email-form">
                         <input className="email-input" type="text" placeholder="Enter your Email" />
-                        <a href='#'>
-                        <button className="subs-btn">SUBSCRIBE</button>
+                        <a>
+                        <button className="subs-btn">Subscribe</button>
                         </a>
                     </div>
               </div>

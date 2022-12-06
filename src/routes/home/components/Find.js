@@ -10,7 +10,7 @@ function Find() {
               <div className="search-form">
                       <input className="search-input" type="text" placeholder="What services are you looking for?" />
                       <a href='#'>
-                      <button className="search-btn">SEARCH</button>
+                      <button className="search-btn">Search</button>
                       </a>
               </div>
           </div>

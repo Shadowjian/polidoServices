@@ -32,6 +32,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    color: var(--color-text1);
 }
 
 .slogan-title span {
@@ -40,7 +41,7 @@
 }
 
 .hire-btn {
-    background: var(--bg-color3);
+    background: var(--bg-color);
     border: none;
     border-radius: 10px;
     height: 40px;
@@ -50,16 +51,16 @@
     text-align: center;
 }
 
-.hire-btn:hover {
-    cursor: pointer;
-    box-shadow: 0 2px 50px 0 #876cca;
-    transition: 1s;
-}
-
 .hirebtn-txt {
-    font-size: 15px;
+    font-size: 18px;
     text-decoration: none;
     font-weight: 700;
+    color: var(--color-text5);
+}
+
+.hirebtn-txt:hover {
+    cursor: pointer;
+    color: var(--link-color);
 }
 
 .newsletter {
@@ -69,6 +70,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    color: var(--color-text1);
 }
 
 .email-form {
@@ -91,13 +93,17 @@
     cursor: text;
 }
 
+.email-input:hover {
+    box-shadow: 0px 0px 2px;
+}
+
 .subs-btn {
-    background: var(--bg-color3);
+    background: var(--bg-color);
     border: none;
     border-radius: 0 10px 10px 0;
     height: 45px;
-    font-size: 15px;
-    color: black;
+    font-size: 18px;
+    color: var(--color-text5);
     font-weight: 700;
     margin: 8px 0;
     padding: 0px;
@@ -107,8 +113,7 @@
 
 .subs-btn:hover {
     cursor: pointer;
-    box-shadow: 0 2px 50px 0 #876cca;
-    transition: 1s;
+    color: var(--link-color);
 }
 
 
@@ -151,14 +156,14 @@
 }
 
 .svc-title {
-    color: black;
+    color: var(--link-color);
     font-weight: 700;
     font-size: 40px;
     margin-bottom: 15px;
 }
 
 .description {
-    color: black;
+    color: var(--color-text1);
     font-weight: 400;
     font-size: 25px;
     padding-bottom: 15px;
@@ -181,7 +186,7 @@
 }
 
 .card { 
-    background: var(--card-color);
+    background: var(--color-text2);
     height: auto;
     width: 300px;
     border-radius: 10px;
@@ -194,7 +199,7 @@
 }
 
 .card-body {
-    height: 220px;
+    height: 200px;
     border-radius: 0 0 10px 10px;
 }
 
@@ -203,16 +208,20 @@
     height: 200px;
     width: 100%;
     align-self: center;
+    margin-bottom: 20px;
 }
 
 .card-title {
     font-size: 20px;
-    padding-bottom: 2px;
+    margin-bottom: 20px;
+    color: var(--link-color);
 }
 
 .card-text {
     font-size: 15px;
     text-align: center;
+    line-height: 20px;
+    color: var(--color-text5);
 }
 
 .card:hover {
@@ -220,7 +229,7 @@
     z-index: 1;
 }
 
-.btn {
+/* .btn {
     padding: 10px;
     background: var(--bg-color3);
     color: black;
@@ -234,7 +243,7 @@
     cursor: pointer;
     box-shadow: 0 2px 50px 0 #876cca;
     transition: 1s;
-}
+} */
 
 /* Services END*/
 
@@ -279,8 +288,8 @@
 }
 
 .step-box {
-    background: var(--card-color);
-    color: black;
+    background: var(--color-text2);
+    color: var(--color-text5);
     min-height: 300px;
     width: 40%;
     display: flex;
@@ -330,8 +339,8 @@
 }
 
 .step-box2 {
-    background: var(--card-color);
-    color: black;
+    background: var(--color-text2);
+    color: var(--color-text5);
     min-height: 300px;
     width: 50%;
     display: flex;
@@ -373,8 +382,8 @@
 }
 
 .step-box3 {
-    background: var(--card-color);
-    color: black;
+    background: var(--color-text2);
+    color: var(--color-text5);
     min-height: 300px;
     width: 100%;
     display: flex;
@@ -412,8 +421,8 @@
 }
 
 .step-box4 {
-    background: var(--card-color);
-    color: black;
+    background: var(--color-text2);
+    color: var(--color-text5);
     min-height: 300px;
     width: 50%;
     display: flex;
@@ -444,11 +453,12 @@
 
 .search-h1 {
     font-size: 60px;
+    color: var(--link-color);
 }
 
 .search-h2 {
     font-size: 30px;
-    color: var(--link-color);
+    color: var(--color-text1);
 }
 
 .search-input {
@@ -465,13 +475,17 @@
     cursor: text;
 }
 
+.search-input:hover {
+    box-shadow: 0px 0px 2px;
+}
+
 .search-btn {
     background: var(--bg-color);
     border: none;
     border-radius: 0 15px 15px 0;
     height: 50px;
-    font-size: 20px;
-    color: #FFFFFF;
+    font-size: 25px;
+    color: var(--color-text5);
     margin: 8px 0;
     width: 200px;
     text-align: center;
@@ -479,8 +493,7 @@
 
 .search-btn:hover {
     cursor: pointer;
-    box-shadow: 0 2px 50px 0 #876cca;
-    transition: 1s;
+    color: var(--link-color);
 }
 
 
@@ -1050,14 +1063,14 @@ FAQ */
     align-items: center;
     width: 100%;
     height: 40vh;
-    
+    margin-top: 50px;
 }
 
 .faq-box {
     height: 300px;
     width: 70%;
     padding: 20px;
-    background-color: gray;
+    background-color: var(--color-text3);
     opacity: 0.9;
     display: flex;
     border-radius: 20px;
@@ -1076,7 +1089,7 @@ FAQ */
 }
 
 .faq-title {
-    color: #ff9900;
+    color: var(--link-color);
     font-size: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -1102,7 +1115,7 @@ FAQ */
 .content-box {
     min-height: auto;
     min-width: 100%;
-    background-color: gray;
+    background-color: var(--color-text3);
     border-radius: 20px;
     align-items: flex-start;
     padding: 20px 40px;
@@ -1117,13 +1130,13 @@ FAQ */
 
 .faq1 {
     font-size: 30px;
-    color: #ff9900;
+    color: var(--link-color);
     padding-left: 50px;
 }
 
 .faq1-box p {
     font-size: 15px;
-    color: #f3f2f0;
+    color: var(--color-text1);
     padding-left: 70px;
 }
 
@@ -1188,13 +1201,14 @@ PRIVACY POLICY*/
     align-items: center;
     width: 100%;
     height: 40vh;
+    margin-top: 50px;
 }
 
 .privacy-box {
     height: 300px;
     width: 70%;
     padding: 20px;
-    background-color: gray;
+    background-color: var(--color-text3);
     opacity: 0.9;
     display: flex;
     border-radius: 20px;
@@ -1239,7 +1253,7 @@ PRIVACY POLICY*/
 .privacycontent-box {
     min-height: auto;
     min-width: 100%;
-    background-color: gray;
+    background-color: var(--color-text3);
     border-radius: 20px;
     align-items: flex-start;
     padding: 20px 40px;
@@ -1254,19 +1268,19 @@ PRIVACY POLICY*/
 
 .privacy1 {
     font-size: 35px;
-    color: #ff9900;
+    color: var(--link-color);
     padding-left: 50px;
 }
 
 .privacy1-num {
     font-size: 20px;
-    color: #ff9900;
+    color: var(--link-color);
     padding-left: 50px; 
 }
 
 .privacy1-box p {
     font-size: 15px;
-    color: #f3f2f0;
+    color: var(--color-text1);
     padding-left: 70px;
 }
 
@@ -1334,13 +1348,14 @@ TERMS AND CONDITIONS*/
     align-items: center;
     width: 100%;
     height: 40vh;
+    margin-top: 50px;
 }
 
 .terms-box {
     height: 300px;
     width: 70%;
     padding: 20px;
-    background-color: gray;
+    background-color: var(--color-text3);
     opacity: 0.9;
     display: flex;
     border-radius: 20px;
@@ -1359,7 +1374,7 @@ TERMS AND CONDITIONS*/
 }
 
 .terms-title {
-    color: #ff9900;
+    color: var(--link-color);
     font-size: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -1385,7 +1400,7 @@ TERMS AND CONDITIONS*/
 .termscontent-box {
     min-height: auto;
     min-width: 100%;
-    background-color: gray;
+    background-color: var(--color-text3);
     border-radius: 20px;
     align-items: flex-start;
     padding: 20px 40px;
@@ -1400,19 +1415,19 @@ TERMS AND CONDITIONS*/
 
 .terms1 {
     font-size: 35px;
-    color: #ff9900;
+    color: var(--color-text3);
     padding-left: 50px;
 }
 
 .terms1-num {
     font-size: 20px;
-    color: #ff9900;
+    color: var(--link-color);
     padding-left: 50px; 
 }
 
 .terms1-box p {
     font-size: 15px;
-    color: #f3f2f0;
+    color: var(--color-text1);
     padding-left: 70px;
 }
 
