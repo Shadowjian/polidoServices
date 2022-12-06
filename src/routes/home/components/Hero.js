@@ -19,7 +19,7 @@ function Hero() {
                     <h1 className="slogan-title">Your <span>PROBLEM</span>... We <span>SOLVE</span></h1>
                     <h3>Broken pipes? Roof leaking? Need Driver?</h3>
                     <button className="hire-btn">
-                      <Link className='hirebtn-txt' to="search" style={{color: 'white'}}>Hire a Professional</Link>
+                      <Link className='hirebtn-txt' to="search">Hire a Professional</Link>
                     </button>
               </div>
 
