@@ -5,7 +5,6 @@ function CardsDevelopers({listFounder}) {
     <>
         
       <li className='devCards'>
-  
         <div>
           <img id='devImage' src={listFounder.image}/>
         </div>
@@ -19,7 +18,7 @@ function CardsDevelopers({listFounder}) {
               {listFounder.position}
             </h4>
           </div>
-          <h5> 
+          <h5 className='founder-statement'> 
             {listFounder.statement}
           </h5>
         <div id='iconsContainer'>
