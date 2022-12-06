@@ -42,16 +42,16 @@ ul{
 	position: relative;
 }
 
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: var(--color-text5);
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
-}
+	.footer-col h4::before{
+		content: '';
+		position: absolute;
+		left:0;
+		bottom: -10px;
+		background-color: var(--color-text5);
+		height: 2px;
+		box-sizing: border-box;
+		width: 50px;
+	}
 
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
@@ -117,6 +117,10 @@ ul{
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
+	text-align: center;
+}
+.footer-col h4::before{
+	display: none;
 }
 }
 `
