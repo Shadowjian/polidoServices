@@ -3,21 +3,22 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 1000px;
+    gap: 20px;
+    margin: 30px auto;
    
 }
 
 .devCards{
     /* background-color: #dcdde4c0 ; */
     /* background:linear-gradient(-90deg, #281c47, #876cca); */
-    background-color: #2f2e51;
+    background-color: var(--color-text5);
     box-shadow: 2px 2px 3px #a7a8b4;
     border-radius: 5px;
     display: flex;
     /* width: 600px; */
-
-    margin: 30px;
-    min-width: 500px;
-    max-width: 400px;
+    /* margin: 30px; */
+    max-width: 500px;
 }
 
 #devImage{
@@ -45,30 +46,32 @@
 #devInfo a{
    
     text-decoration: none;
-    color: #ff9900;
+    color: var(--color-text2);
     /* color: rgb(243, 141, 8); */
-     
+}
+
+#devInfo a:hover {
+    color: var(--link-color);
+    /* box-shadow: 0px 0px 2px; */
+}
+
+#name {
+    color: var(--link-color) !important;
+
 }
 
 #devInfo  h5{
     
-    color: rgb(223, 202, 202);
+    color: var(--color-text1);
+    margin-top: 10px;
   }
 
 #devInfo h4 {
-    text-decoration-line: underline;
-    color: #ff9900;
-    font-weight: lighter;
-  
-    
+    /* text-decoration-line: underline; */
+    color: var(--link-color);
+    /* font-weight: lighter; */
 }
    
-#devInfo h5{
-    margin-top: 10px;
-    
-    
-}
-
 #iconsContainer{
     display: flex;
     margin-top: 20px;

@@ -55,13 +55,10 @@ function About() {
           </div>
        
       <div id='aboutBody'>
-      
-         
 
           <div id='parContOne'>
-         
-           
           <AboutObjects/>
+          </div>
           
             {/* <h2 id='headOne'>Who We Are</h2> 
              
@@ -71,7 +68,6 @@ function About() {
                   We're a team of energetic, passionate, and dedicated individuals. As the First growing services marketplace, we have vast ambitions as we continue to expand across the country.
               </p>
               <img id='officeImage' src={PolidoOffice} /> */}
-          </div>
           
           {/* <h2 id='headTwo'>Our Goal in the community </h2>
             <p id='p-Two'>
