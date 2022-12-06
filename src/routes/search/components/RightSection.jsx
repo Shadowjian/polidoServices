@@ -30,7 +30,7 @@ const SellerSection = styled('section')`
 
 const BannerDiv = styled.div `
   position: relative;
-  height: 200px;
+  height: 180px;
   width: 100%;
   background: var(--bg-color3);
   display: flex;
@@ -166,7 +166,7 @@ margin-bottom: 30px;
 const BookMe = styled.div`
   position: absolute;
   align-self: center;
-  bottom: 40px;
+  bottom: 30px;
   width: 50%;
   div {
     text-align: center;
@@ -188,7 +188,7 @@ const BookMe = styled.div`
 function RightSection({hideSeller, sellerData}) {
 
   const bookMe = () => {
-    alert('fix this')
+    alert('Will work on End Game')
   }
 
   console.log(sellerData)

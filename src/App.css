@@ -170,7 +170,7 @@ body {
     width: 50vw;
     height: 100vh;
     position: fixed;
-    background-color: rgb(251, 250, 252);
+    background-color: var(--bg-primary);
     top: 0;
     left: 0;
     z-index: 9999;
@@ -178,11 +178,11 @@ body {
 
 .nav-modal-links .link {
     text-decoration: none;
-    color: rgb(155, 136, 172);
+    color: var(--color-text4);
 }
 
 .nav-modal-links .link:hover {
-    color: rgb(112, 73, 147);
+    color: var(--link-color);
 }
 
 
@@ -251,6 +251,7 @@ body {
     justify-content: center;
     font-size: large;
     border: solid 1px;
+    border-radius: 5px;
 }
 .btnl:hover {
     cursor: pointer;
@@ -276,9 +277,17 @@ body {
 }
 
 #email, #password {
+    margin-top: 5px;
     font-size: large;
     width: 100%;
     padding: 10px;
+    color: var(--color-text1);
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px;
+    border: none;
+}
+#email:hover, #password:hover {
+    box-shadow: 0px 0px 3px;
 }
 
 .forgot-password {

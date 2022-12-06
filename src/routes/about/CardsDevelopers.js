@@ -13,7 +13,7 @@ function CardsDevelopers({listFounder}) {
         <div id='devInfo'>
           <div>
             <h2 id='h2Cards'>
-              <a target='_blank'>{listFounder.name}</a>
+              <a target='_blank' id="name">{listFounder.name}</a>
             </h2>
             <h4>
               {listFounder.position}

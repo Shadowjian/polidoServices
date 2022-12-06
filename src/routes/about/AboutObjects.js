@@ -10,7 +10,7 @@ const foundersObject = [
   
   
   {
-    headTwo: 'WHO WE ARE',
+    headTwo: 'Who We Are',
     pageOne: "Polido services are   the first  services marketplace in the Philippines. We are driving a shift towards a demand-based, digital economy for service businesses. We are passionate about helping people to empower them to live their work by building their businesses from  the ground up and becoming financially and professionally independent. We're a team of energetic, passionate, and dedicated individuals. As the First growing services marketplace, we have vast ambitions as we continue to expand across the country.",
     image: polidoOffice,
   },
@@ -20,12 +20,12 @@ const foundersObject = [
     image: polidoGoal,
   },
   {
-    headTwo: 'A PASSIONATE TEAM ',
+    headTwo: 'A Passionate Team ',
     pageOne:  "Polido services assembled a team of the best and brightest minds in the business. We're all dedicated to the global ambitions of our business, whilst maintaining a collaborative, passionate, and family-like approach with shared responsibility and passion for everyone using our service.",
     image: polidoEmp,
   },
   {
-    headTwo: 'THE FOUNDERS',
+    headTwo: 'The Founders',
     pageOne:  "Polido services are Founded by successful serial entrepreneurs   Hajji, Mark Leo, and Joseph Gee with a vision and passion for helping Individual professionals get any job done easier and more efficiently.",
    
   },
