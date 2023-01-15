@@ -191,7 +191,7 @@ function RightSection({hideSeller, sellerData}) {
     alert('Will work on End Game')
   }
 
-  console.log(sellerData)
+  // console.log(sellerData)
   return (
     <SellerSection id='seller-profile'>
       <BannerDiv>

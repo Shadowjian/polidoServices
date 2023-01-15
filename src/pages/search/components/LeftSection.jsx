@@ -52,7 +52,6 @@ function SearchCard ({showSeller, seller, index}) {
                 {sellers.map((seller, id)=> {
                   index = [...index, id]
                   return <SearchCard key = {id} seller={seller} index = {index} showSeller={showSeller}/>})}
-                  
             </div>
         </div>
     )

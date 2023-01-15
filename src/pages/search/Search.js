@@ -34,9 +34,9 @@ function Search() {
     setSellerProfile(true)
     // console.log(sellers)
     const index = (e.target.getAttribute('id').split(','))
-    // console.log(index)
+    console.log(index)
     setSellerData((sellers[index.splice(-1)]))
-    console.log(sellerData)
+    // console.log(sellerData)
   }
   const hideSeller = () => {
     setSellerProfile(false)

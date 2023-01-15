@@ -143,43 +143,54 @@ const toggleProfile = ()=> {
           <Link className="link" to="about">About</Link>
           <Link className="link" to="search">Search</Link>
           
-          {loggedIn? <div className="link profile-btn" onClick={toggleProfile}>
-            <img src={profilePic} alt="" />
-          </div> :
-          <div className="link" onClick={showLogin}>Login</div>}
-          
+          {
+          loggedIn?
+            <div className="link profile-btn" onClick={toggleProfile}>
+              <img src={profilePic} alt="" />
+            </div> 
+          :
+            <div className="link" onClick={showLogin}>Login</div>
+          }
+        
         </div>
 
-        {loggedIn? <div className='login-btn profile-btn' onClick={toggleProfile}>
-          <img src={profilePic} alt="" />
-        </div> : 
-        <div className='login-btn' onClick={showLogin}>
-          Login
-        </div>
+        {
+        loggedIn? 
+          <div className='login-btn profile-btn' onClick={toggleProfile}>
+            <img src={profilePic} alt="" />
+          </div> 
+        : 
+          <div className='login-btn' onClick={showLogin}>Login</div>
         }
 
       </div>
 
       <div>
-          {navigation && 
+          {
+          navigation && 
           <>
-          <div className='overlay' onClick={hideNav}></div>
-          <NavModal hideNav={hideNav}/>
-          </>}
+            <div className='overlay' onClick={hideNav}></div>
+            <NavModal hideNav={hideNav}/>
+          </>
+          }
         </div>
       <div>
-          {login && 
+          {
+          login && 
           <>
-          <div className='overlay' onClick={hideLogin}></div>
-          <Login hideLogin={hideLogin} showSignUp={showSignUp} logIn={logIn}/>
-          </>}
+            <div className='overlay' onClick={hideLogin}></div>
+            <Login hideLogin={hideLogin} showSignUp={showSignUp} logIn={logIn}/>
+          </>
+          }
         </div>
       <div>
-          {signUp && 
+          {
+          signUp && 
           <>
-          <div className='overlay' onClick={hideSignUp}></div>
-          <SignUp hideSignUp={hideSignUp} logIn={logIn}/>
-          </>}
+            <div className='overlay' onClick={hideSignUp}></div>
+            <SignUp hideSignUp={hideSignUp} logIn={logIn}/>
+          </>
+          }
         </div>
       <div>
           {profileToggle && <ProfileDropDown logOut={logOut}/>}
